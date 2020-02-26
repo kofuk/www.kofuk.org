@@ -8,6 +8,7 @@ summaryLength = 300
 disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 newContentEditor = "emacs"
+enableEmoji = true
 
 [Author] # Used in authorbox
   name = "Koki Fukuda"

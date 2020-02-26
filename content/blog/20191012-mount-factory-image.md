@@ -1,6 +1,10 @@
 ---
 title: "Android の Factory Image を Linux でマウントする"
 date: 2019-10-12T10:00:00+09:00
+
+tags:
+  - gnu/linux
+  - android
 ---
 
 Google からダウンロードできる Nexus用 (もしくは Pixel用) のFactory Image は

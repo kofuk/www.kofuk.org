@@ -1,6 +1,10 @@
 ---
 title: "Surface GoにUbuntuをインストール"
 date: 2019-08-25T10:00:00+09:00
+
+tags:
+  - gnu/linux
+  - ubuntu
 ---
 
 まずはじめに、Surface Go に Ubuntu をインストールするモチベーションは何かというと、

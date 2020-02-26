@@ -1,6 +1,9 @@
 ---
 title: "Emacs の glasses-mode"
 date: 2020-02-25T00:09:24+09:00
+
+tags:
+  - emacs
 ---
 
 camel case を snake case で表示してくれるやつ。

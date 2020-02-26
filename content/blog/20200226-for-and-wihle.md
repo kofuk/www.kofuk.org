@@ -1,6 +1,12 @@
 ---
 title: "for と while"
 date: 2020-02-26T19:05:28+09:00
+
+categories:
+  - diary
+tags:
+  - c
+  - development
 ---
 
 どうでもいいけど for 文と while 文だったら for 文を優先して使うことが多い気がする。

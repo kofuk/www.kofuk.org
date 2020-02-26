@@ -1,6 +1,11 @@
 ---
 title: "xterm でクリックできるっていうのでいうと"
 date: 2020-02-25T00:03:32+09:00
+
+categories:
+  - diary
+tags:
+  - shell
 ---
 
 xterm だと何らかのコントロールシーケンスでマウスのクリックを

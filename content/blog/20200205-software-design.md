@@ -1,6 +1,11 @@
 ---
 title: "Software Design を買い始めてみた"
 date: 2020-02-05T20:56:54+09:00
+
+catrgories:
+  - diary
+tags:
+  - development
 ---
 
 今更ながら，技術評論社の Software Design を買い始めてみた。

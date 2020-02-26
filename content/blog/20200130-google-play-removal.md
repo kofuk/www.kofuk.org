@@ -1,6 +1,10 @@
 ---
 title: "アプリが Google Play から削除された"
 date: 2020-01-30T22:16:47+09:00
+
+tags:
+  - android
+  - development
 ---
 
 最近，というかここ1年くらい Android アプリは全然作ってなくて，

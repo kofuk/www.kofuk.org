@@ -1,6 +1,10 @@
 ---
 title: "GNOME 端末 と Sixel"
 date: 2020-02-25T22:55:25+09:00
+
+tags:
+  - gnome
+  - shell
 ---
 
 GNOME 端末，というか GNOME 端末が使っている vte に Sixel が入ってほしいな，

@@ -1,6 +1,10 @@
 ---
 title: "Python の並列処理とか"
 date: 2020-01-28T21:01:50+09:00
+
+tags:
+  - development
+  - python
 ---
 
 先日作った Minecraft のマップ画像を生成するやつが遅すぎる（7min/region）のをなんとかしたいので，

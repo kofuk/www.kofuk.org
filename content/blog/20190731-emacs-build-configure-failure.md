@@ -1,6 +1,10 @@
 ---
 title: "Emacsをビルドするときにconfigureがうまくいかない場合の対処法"
 date: 2019-07-31T10:00:00+09:00
+
+tags:
+  - development
+  - emacs
 ---
 
 たしか Ubuntu だと `libgnutls28-dev` を入れても `configure` スクリプトで認識されなかった。

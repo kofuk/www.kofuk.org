@@ -2,53 +2,47 @@ baseurl = "https://www.kofuk.org/"
 title = "kofuk's blog"
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
-paginate = "10" # Number of posts per page
+paginate = "10"
 theme = "Mainroad"
 hasCJKLanguage = true
 summaryLength = 300
-disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+disqusShortname = ""
+googleAnalytics = ""
 newContentEditor = "emacs"
 enableEmoji = true
 
-[Author] # Used in authorbox
+[Author]
   name = "Koki Fukuda"
-  bio = "A university student."
+  bio = "大学生。 diary カテゴリーの投稿はより /dev/urandom 感が強いです。"
   avatar = "https://www.gravatar.com/avatar/621e74aa419b530d81adb56ddc16db12?s=0"
 
 [Params]
-  subtitle = "" # Subtitle of your site. Used in site header
-  description = "" # Site description. Used in meta description
-  copyright = "Koki Fukuda" # Footer copyright holder, otherwise will use site title
-  opengraph = true # Enable OpenGraph if true
-  twitter_cards = true # Enable Twitter Cards if true
-  readmore = true # Show "Read more" button in list if true
-  authorbox = true # Show authorbox at bottom of pages if true
-  toc = false # Enable Table of Contents
-  post_navigation = true # Show post navigation at bottom of pages if true
-  post_meta = ["date", "categories", "translations"] # Order of post meta information
-  mainSections = "blog" # Specify section pages to show on home page and the "Recent articles" widget
-  dateformat = "2006-01-02" # Change the format of dates
-  mathjax = true # Enable MathJax
-  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
-  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-  highlightColor = "#0032a8" # Override highlight color
-  customCSS = [] # Include custom CSS files
-  customJS = [] # Include custom JS files
+  subtitle = ""
+  description = "kofuk の日記とかメモとか。/dev/urandom から出てきた説もあります。"
+  copyright = "Koki Fukuda"
+  opengraph = true
+  twitter_cards = true
+  readmore = true
+  authorbox = true
+  toc = false
+  post_navigation = true
+  post_meta = ["date", "categories", "translations"]
+  mainSections = "blog"
+  dateformat = "2006-01-02"
+  mathjax = true
+  highlightColor = "#0032a8"
 
 [Params.sidebar]
-  home = "right" # Configure layout for home page
-  list = "right"  # Configure layout for list pages
-  single = "right" # Configure layout for single pages
-  # Enable widgets in given order
+  home = "right"
+  list = "right"
+  single = "right"
   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget
+  recent_num = 5
+  tags_counter = false
 
 [Params.widgets.social]
-  # Enable parts of social widget
   facebook = ""
   twitter = "man_2_fork"
   instagram = ""

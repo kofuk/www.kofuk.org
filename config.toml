@@ -1,6 +1,7 @@
 baseurl = "https://www.kofuk.org/"
 title = "kofuk's blog"
 languageCode = "ja-jp"
+defaultContentLanguage = "ja"
 paginate = "10" # Number of posts per page
 theme = "Mainroad"
 hasCJKLanguage = true

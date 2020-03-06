@@ -13,12 +13,12 @@ enableEmoji = true
 
 [Author]
   name = "Koki Fukuda"
-  bio = "大学生。 diary カテゴリーの投稿はより /dev/urandom 感が強いです。"
+  bio = "大学生。 diary カテゴリーの投稿はより /dev/urandom 感が強いです。コメント等はメールまたは Twitter までお願いします。"
   avatar = "https://www.gravatar.com/avatar/621e74aa419b530d81adb56ddc16db12?s=0"
 
 [Params]
   subtitle = ""
-  description = "kofuk の日記とかメモとか。/dev/urandom から出てきた説もあります。"
+  description = "kofuk の /dev/random から出てきた日記とかメモとか。"
   copyright = "Koki Fukuda"
   opengraph = true
   twitter_cards = true

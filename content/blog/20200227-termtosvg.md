@@ -3,7 +3,7 @@ title: "SVG でターミナルを録画できる termtosvg"
 date: 2020-02-27T21:58:39+09:00
 
 tags:
-  - develpoment
+  - development
   - gnu/linux
 ---
 

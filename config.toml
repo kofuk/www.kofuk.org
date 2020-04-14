@@ -17,8 +17,8 @@ enableEmoji = true
   avatar = "https://www.gravatar.com/avatar/621e74aa419b530d81adb56ddc16db12?s=0"
 
 [Params]
-  subtitle = ""
-  description = "kofuk の /dev/random から出てきた日記とかメモとか。"
+  subtitle = "kofuk の日記兼雑記"
+  description = "kofuk の日記兼雑記"
   copyright = "Koki Fukuda"
   opengraph = true
   twitter_cards = true
@@ -51,4 +51,4 @@ enableEmoji = true
   github = "kofuk"
   gitlab = "KoFuk"
   bitbucket = ""
-  email = "ko.fu.dev_at_gmail.com"
+  email = "ko.fu.dev+blog {a} gmail.com"

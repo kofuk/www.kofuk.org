@@ -18,7 +18,7 @@ enableEmoji = true
 
 [Params]
   subtitle = "kofuk の日記兼雑記"
-  description = "kofuk の日記兼雑記"
+  description = "kofuk の日記兼雑記。主に技術的な情報を自分用のメモを兼ねて書いています。"
   copyright = "Koki Fukuda"
   opengraph = true
   twitter_cards = true
@@ -40,7 +40,7 @@ enableEmoji = true
 
 [Params.widgets]
   recent_num = 5
-  tags_counter = false
+  tags_counter = true
 
 [Params.widgets.social]
   facebook = ""

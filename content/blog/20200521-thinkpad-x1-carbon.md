@@ -2,7 +2,7 @@
 title: "ThinkPad X1 Carbon"
 date: 2020-05-21T21:39:55+09:00
 
-catrgory:
+categories:
   - diary
 ---
 

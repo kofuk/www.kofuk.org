@@ -2,7 +2,7 @@
 title: "「Javaで書いてあるからどのOSでも動く」の話"
 date: 2020-05-21T22:14:23+09:00
 
-catrgories:
+categories:
   - diary
 ---
 

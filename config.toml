@@ -17,8 +17,8 @@ enableEmoji = true
   avatar = "https://www.gravatar.com/avatar/621e74aa419b530d81adb56ddc16db12?s=0"
 
 [Params]
-  subtitle = "kofuk の日記兼雑記"
-  description = "kofuk の日記兼雑記。主に技術的な情報を自分用のメモを兼ねて書いています。"
+  subtitle = "kofuk の日記、雑記、もしくは備忘録"
+  description = "主に技術的な情報を自分用のメモを兼ねて書いています。"
   copyright = "Koki Fukuda"
   opengraph = true
   twitter_cards = true

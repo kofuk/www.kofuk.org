@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -eu
+
+if [[ $# -lt 1 ]]; then
+    echo 'usage: search QUERY'
+    exit 1
+fi
+
+_DIR="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
+grep -iE ".?$1" -r "$_DIR/../content" | cut -d: -f1 | sort | uniq | sed -E 's@^.*/content/(.+)\.md@\1@g'| \
+    xargs -I@ echo -e '\e]8;;https://www.kofuk.org/@/\a@\e]8;;\a'

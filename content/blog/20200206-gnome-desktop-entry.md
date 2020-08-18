@@ -4,7 +4,7 @@ date: 2020-02-06T10:44:24+09:00
 
 tags:
   - development
-  - gnome
+  - GNOME
 ---
 
 これは GNOME に限らず，XDG 準拠のデスクトップ環境ならどこでも使える気がするんですが。

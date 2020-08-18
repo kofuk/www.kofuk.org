@@ -4,7 +4,7 @@ date: 2020-08-17T23:10:34+09:00
 
 tags:
   - development
-  - lisp
+  - LISP
 ---
 
 ふと FizzBuzz を LISP 的に書くとどうなるんだろうと思って調べてみた。

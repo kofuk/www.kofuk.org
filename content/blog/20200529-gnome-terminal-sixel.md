@@ -1,6 +1,9 @@
 ---
 title: "GNOME端末にSixelが入るかも？"
 date: 2020-05-29T19:24:42+09:00
+
+tags:
+  - GNOME
 ---
 
 知らんけど。

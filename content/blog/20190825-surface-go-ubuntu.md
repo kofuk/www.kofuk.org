@@ -4,8 +4,8 @@ date: 2019-08-25T10:00:00+09:00
 lastmod: 2020-08-11T00:30:43+09:00
 
 tags:
-  - gnu/linux
-  - ubuntu
+  - GNU/Linux
+  - Ubuntu
 ---
 
 まずはじめに、Surface Go に Ubuntu をインストールするモチベーションは何かというと、

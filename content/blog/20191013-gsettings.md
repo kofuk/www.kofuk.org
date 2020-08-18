@@ -3,8 +3,8 @@ title: "gsettings で変更したい設定メモ"
 date: 2019-10-13T10:00:00+09:00
 
 tags:
-  - gnu/linux
-  - gnome
+  - GNU/Linux
+  - GNOME
 ---
 
 # ウィンドウのボタンの配列を変更

@@ -3,7 +3,7 @@ title: "WindowsでCapsLockキーをCtrlキーとして使う"
 date: 2020-08-17T13:36:25+09:00
 
 tags:
-  - windows
+  - Windows
 ---
 
 ウェブのいろんなところに書いてあるけどレジストリをいじる。弄坏（だめ）。

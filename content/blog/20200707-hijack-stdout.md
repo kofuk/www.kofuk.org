@@ -3,6 +3,7 @@ title: "標準入出力を乗っ取ったりしていろいろやる"
 date: 2020-07-07T17:11:06+09:00
 
 tags:
+  - shell
   - development
 ---
 
@@ -42,9 +43,9 @@ for (int fd = 0; fd < 3; ++fd) {                                    \
     tcsetattr(fd, 0 /* TCSADRAIN */, (struct termios *)attrs[fd]);  \
 }
 EOF
-    # If this is TUI app, let it redraw.
-    kill -WINCH "$pid"
-    tail -f /dev/null --pid "$pid"
+# If this is TUI app, let it redraw.
+kill -WINCH "$pid"
+tail -f /dev/null --pid "$pid"
 ```
 
 やっていることは基本的に単純で，gdb でプロセスを attach して file descriptor

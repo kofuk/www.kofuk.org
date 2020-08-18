@@ -3,7 +3,7 @@ title: "WindowsにCMakeのプロジェクトを移植する"
 date: 2020-06-08T16:36:59+09:00
 tags:
   - development
-  - windows
+  - Windows
 ---
 
 UNIX で Makefile 生成してビルドしていたような CMake のプロジェクトを Windows に移植する。

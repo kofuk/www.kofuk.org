@@ -3,7 +3,7 @@ title: "比較演算の結果の値"
 date: 2020-03-05T00:02:53+09:00
 
 tags:
-  - c
+  - C
   - development
 ---
 

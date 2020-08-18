@@ -4,7 +4,7 @@ date: 2020-01-19T00:51:48+09:00
 
 tags:
   - development
-  - minecraft
+  - Minecraft
 ---
 
 [なんかここに](https://mcmap.chronoscoper.com/)

@@ -4,8 +4,8 @@ date: 2020-01-26T17:23:55+09:00
 
 tags:
   - development
-  - minecraft
-  - python
+  - Minecraft
+  - Python
 ---
 
 VoxelMap というクライアント Mod を使っていて，この Mod は地図を PNG に書き出したり

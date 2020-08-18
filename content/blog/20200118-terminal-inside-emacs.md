@@ -3,7 +3,7 @@ title: "Emacs 内でターミナルを使うなど"
 date: 2020-01-18T15:32:42+09:00
 
 tags:
-  - emacs
+  - Emacs
 ---
 
 ターミナル内で Emacs じゃないです。Emacs 内でターミナルです。いつも軽い用途であれば `M-x shell` とかを使って，

@@ -3,7 +3,7 @@ title: "Minecraft"
 date: 2020-01-18T13:56:51+09:00
 
 tags:
-  - minecraft
+  - Minecraft
 ---
 
 以前は Java 版を買うことで Windows 10 版もくれていた気がするけど，近頃はくれなくなっているらしく，

@@ -4,9 +4,9 @@ date: 2019-08-23T10:00:00+09:00
 
 tags:
   - development
-  - gnu/linux
-  - ubuntu
-  - c
+  - GNU/Linux
+  - Ubuntu
+  - C
 ---
 
 環境は `Ubuntu 18.04.3 LTS x86_64` です．

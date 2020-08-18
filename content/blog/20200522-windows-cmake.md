@@ -4,7 +4,7 @@ date: 2020-05-22T12:54:04+09:00
 
 tags:
   - development
-  - windows
+  - Windows
 ---
 
 Visual Studio 入れて試してみたら簡単だった（今まで MSYS2 入れて UNIX Makefile を生成してビルドしていた）．

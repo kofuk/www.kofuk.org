@@ -3,7 +3,7 @@ title: "すごい syslog の話"
 date: 2020-02-22T09:33:56+09:00
 
 tags:
-  - gnu/linux
+  - GNU/Linux
   - shell
 ---
 

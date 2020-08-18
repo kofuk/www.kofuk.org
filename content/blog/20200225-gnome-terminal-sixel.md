@@ -3,7 +3,7 @@ title: "GNOME 端末 と Sixel"
 date: 2020-02-25T22:55:25+09:00
 
 tags:
-  - gnome
+  - GNOME
   - shell
 ---
 

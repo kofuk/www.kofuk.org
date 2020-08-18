@@ -2,7 +2,7 @@
 title: "LaTeXのenumerateで使う文字を変更する"
 date: 2020-06-17T15:39:45+09:00
 tags:
-  - latex
+  - LaTeX
 ---
 
 深さNのところをi, ii, iii,... というふうにしたいならば，

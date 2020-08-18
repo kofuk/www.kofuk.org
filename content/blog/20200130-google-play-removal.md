@@ -3,7 +3,7 @@ title: "アプリが Google Play から削除された"
 date: 2020-01-30T22:16:47+09:00
 
 tags:
-  - android
+  - Android
   - development
 ---
 

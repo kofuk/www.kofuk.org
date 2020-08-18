@@ -5,7 +5,7 @@ date: 2020-02-23T01:01:52+09:00
 categories:
   - diary
 tags:
-  - gnu/linux
+  - GNU/Linux
 ---
 
 有名すぎて今更感あるけど（でも実際にやった人はあまりいないと思われ）やってみたい。

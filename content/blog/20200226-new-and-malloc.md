@@ -3,8 +3,8 @@ title: "new と malloc(3) を混在させていいのか"
 date: 2020-02-26T23:33:11+09:00
 
 tags:
-  - c
-  - c++
+  - C
+  - C++
 ---
 
 という議論が [ここ](http://blogs.wankuma.com/jitta/archive/2007/01/09/55215.aspx)

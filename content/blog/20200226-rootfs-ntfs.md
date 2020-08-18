@@ -3,8 +3,8 @@ title: "rootfs に NTFS を使う？"
 date: 2020-02-26T22:01:38+09:00
 
 tags:
-  - gnu/linux
-  - archlinux
+  - GNU/Linux
+  - ArchLinux
 ---
 
 しかも ArchLinux でやってる。エモい。

@@ -1,6 +1,9 @@
 ---
 title: "Waylandで動いているかXWaylandで動いているか見分ける"
 date: 2020-06-01T17:26:40+09:00
+
+tags:
+  - GNU/Linux
 ---
 
 小数単位でのスケーリングをしていたら XWayland のアプリケーションは

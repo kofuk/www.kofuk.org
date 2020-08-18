@@ -6,8 +6,8 @@ categories:
   - diary
 tags:
   - development
-  - gnu/linux
-  - minecraft
+  - GNU/Linux
+  - Minecraft
 ---
 
 ブロックの高さと名前が出せるようになった。

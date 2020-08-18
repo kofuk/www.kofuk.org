@@ -5,9 +5,9 @@ date: 2020-02-25T22:42:51+09:00
 categories:
   - diary
 tags:
-  - c++
+  - C++
   - development
-  - minecraft
+  - Minecraft
 ---
 
 Minecraft で読み込まれるチャンクの半径は 3--16 の間で選べるのだそうだ。

@@ -4,7 +4,7 @@ date: 2020-02-27T21:58:39+09:00
 
 tags:
   - development
-  - gnu/linux
+  - GNU/Linux
 ---
 
 いろんなワードで `pacman -Ss` してみて眺めていたら，`termtosvg` というやつを

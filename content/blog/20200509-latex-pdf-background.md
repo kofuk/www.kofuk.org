@@ -3,7 +3,7 @@ title: "PDFやWordファイルのテンプレートでもLaTeXでなんとかす
 date: 2020-05-09T15:59:32+09:00
 
 tags:
-  - latex
+  - LaTeX
 ---
 
 Word ファイルの場合，仕方ないので Microsoft Word とかで PDF に変換しておく。

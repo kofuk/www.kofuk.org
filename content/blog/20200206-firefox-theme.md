@@ -3,7 +3,8 @@ title: "Firefox のテーマ"
 date: 2020-02-06T13:21:48+09:00
 
 tags:
-  - gnome
+  - GNOME
+  - Firefox
 ---
 
 [Google Chrome Light](https://addons.mozilla.org/ja/firefox/addon/google-chrome-light/)

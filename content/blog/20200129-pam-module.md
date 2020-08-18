@@ -3,9 +3,9 @@ title: "PAM で遊んでみた"
 date: 2020-01-29T21:59:17+09:00
 
 tags:
-  - c
+  - C
   - development
-  - gnu/linux
+  - GNU/Linux
 ---
 
 PAM で遊んでみた。PAM ってのは Pluggable Authentication Manager の略らしく，

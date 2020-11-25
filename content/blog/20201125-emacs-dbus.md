@@ -10,6 +10,15 @@ tags:
 Emacs の scratch バッファで DBus のメソッドを叩いたりできるので便利。たぶん。
 DBus 便利じゃんね。（分かってない）
 
+## 準備
+
+`require` する。`M-x describe-function` すると勝手に内部で `require` するようなので
+忘れていたが、当然といえば当然。
+
+```lisp
+(require 'dbus)
+```
+
 ## Introspection
 
 プロパティとかインターフェースを眺めるやつ。
@@ -37,6 +46,28 @@ Emacs だと Lisp での型が適当に DBus の型にマッピングされて�
  "ScreenshotWindow"
  t t nil "/tmp/foo.png")
 ```
+
+elisp の型とのマッピングだとうまくいかない場合やマッピングされていない型を使っているメソッドを叩く場合、キーワードパラメータで手動で指定できる。
+
+```lisp
+(dbus-call-method
+ :session
+ "org.gnome.Shell.PortalHelper"
+ "/org/gnome/Shell/PortalHelper"
+ "org.gnome.Shell.PortalHelper"
+ "Authenticate"
+ :object-path "/org/gnome/dummy" "" 0)
+```
+
+あと array の中身の型を指定したい場合とかとか。
+
+```lisp
+(...
+ '(:array :signature "i")
+ '(:array :signature "{sv}")
+ ...)
+```
+
 
 ## プロパティを読む
 

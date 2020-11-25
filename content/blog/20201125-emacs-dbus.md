@@ -29,7 +29,7 @@ XML でなくて S 式で表示される。
 Emacs だと Lisp での型が適当に DBus の型にマッピングされていて割と楽。
 あと引数が一致しなかったりしたら Emacs Lisp の例外が上がる。
 
-```lips
+```lisp
 (dbus-call-method
  :session "org.gnome.Shell"
  "/org/gnome/Shell/Screenshot"

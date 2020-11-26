@@ -1,7 +1,7 @@
 ---
 title: "環境のメモ"
 date: 2020-04-15T21:59:59+09:00
-lastmod: 2020-11-17T14:53:03+09:00
+lastmod: 2020-11-26T09:56:48+09:00
 
 tags:
   - development
@@ -57,7 +57,6 @@ tags:
 - ~~`/etc/default/grub` をいじって起動時のログを冗長にする~~ GRUB じゃなくて systemd-boot 使えばいいや
 - ibus が起動してくれなかったらなんとかする
 - PHP で SQLite が使えるように設定ファイルを足す（ファイル名は何でもいいけど `/etc/php/conf.d/sqlite.ini` とかに）
+- 置くやつ on [Gist](https://gist.github.com/kofuk/966708814d7ffa2d4ee5c095a74e0413)
 
-```ini
-extension=pdo_sqlite
-```
+{{< gist kofuk 966708814d7ffa2d4ee5c095a74e0413 >}}

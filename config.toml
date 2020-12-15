@@ -52,3 +52,8 @@ enableEmoji = true
   gitlab = "KoFuk"
   bitbucket = ""
   email = "ko.fu.dev+blog {a} gmail.com"
+
+[[Params.widgets.social.custom]]
+  title = "View Source Repository"
+  url = "https://github.com/kofuk/www.kofuk.org"
+  icon = "svg/repo.svg"

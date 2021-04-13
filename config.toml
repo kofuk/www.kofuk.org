@@ -1,5 +1,5 @@
 baseurl = "https://www.kofuk.org/"
-title = "kofuk's blog"
+title = "チラシの裏とかそういう類の"
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 paginate = "10"
@@ -17,7 +17,7 @@ enableEmoji = true
   avatar = "https://www.gravatar.com/avatar/621e74aa419b530d81adb56ddc16db12?s=0"
 
 [Params]
-  subtitle = "チラシの裏もどき"
+  subtitle = "メモ書きだとかそうじゃないとか"
   description = "主に技術的な情報を自分用のメモを兼ねて書いています。"
   copyright = "Koki Fukuda"
   opengraph = true

@@ -17,6 +17,9 @@ menu:
 
 ## 2021
 
+- mpfix ([GitHub](https://github.com/kofuk/mpfix))
+    - Windows で mp3 のメタデータが Shift\_JIS になってしまうので、UTF-8 に変換する。
+
 ## 2020
 
 - rebuild ([GitHub](https://github.com/kofuk/rebuild))

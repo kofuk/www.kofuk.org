@@ -6,7 +6,7 @@ tags:
   - development
 ---
 
-![導入後](/images/20210803-vte-sixel/sixel.png)
+![導入後](sixel.png)
 
 久しぶりに vte のリポジトリを見に行ったら HEAD で Sixel が使えるようになっていたので、
 その導入方法を……。

@@ -46,7 +46,7 @@ Chrome の場合は割と簡単にこの機能を有効にすることができ�
 
 まず、アドレスバーに `about:extensions` と入力し、拡張機能の管理画面を開きます。
 
-![Chromeの拡張機能の管理画面](/images/20201212-browser-extension/chrome-manage-extension.png)
+![Chromeの拡張機能の管理画面](chrome-manage-extension.png)
 
 そして右上の「デベロッパー モード」のスイッチをオンにします。
 
@@ -142,33 +142,33 @@ Chrome の場合は `chrome://extensions` にアクセスして「デベロッ�
 リストに表示されます。拡張機能のファイルを編集した場合は右下の更新ボタンを押せば再読み込みされます。
 「詳細」ボタンを押すとシークレットタブでも実行できるように設定できたりします。
 
-![Chromeで拡張機能を読み込んだ](/images/20201212-browser-extension/load-extension-chrome.png)
+![Chromeで拡張機能を読み込んだ](load-extension-chrome.png)
 
 Firefox の場合は `about:addons` にアクセスし、右上の歯車のアイコンから「アドオンをデバッグ」を
 選択してデバッグ用にアドオンをインストールする画面を開きます。
 
-![Firefoxでアドオンのデバッグ画面を開く](/images/20201212-browser-extension/load-extension-firefox.png)
+![Firefoxでアドオンのデバッグ画面を開く](load-extension-firefox.png)
 
 開いた画面で「一時的なアドオンを読み込む」ボタンをクリックし、さきほど作った `manifest.json` か
 `main.js` のどちらかを選択します。
 
-![Firefoxで拡張機能をインストールする](/images/20201212-browser-extension/load-extension-firefox.png)
+![Firefoxで拡張機能をインストールする](load-extension-firefox.png)
 
 F12 を押して開いた画面で「Console」というタブを選ぶと、"Hello, world!"
 と出力されているのが分かると思います。画像は Chrome ですが、Firefox でも F12 を押して「コンソール」タブを
 選ぶと同じように出力されています。
 
-![Chromeで&quot;Hello, world!&quot;が出力されている様子](/images/20201212-browser-extension/hello-world-chrome.png)
+![Chromeで&quot;Hello, world!&quot;が出力されている様子](hello-world-chrome.png)
 
 次に、Google のページで検索欄がいらないと思ったとします。これを消してみましょう。
 
-「Elements」タブを開き、左上の![インスペクターのアイコン](/images/20201212-browser-extension/inspector-icon.png)アイコンを押します。
+「Elements」タブを開き、左上の![インスペクターのアイコン](inspector-icon.png)アイコンを押します。
 
-![Chromeのインスペクター](/images/20201212-browser-extension/chrome-inspector.png)
+![Chromeのインスペクター](chrome-inspector.png)
 
 そして、検索欄の要素を探します。
 
-![検索欄を探す](/images/20201212-browser-extension/chrome-find-searchform.png)
+![検索欄を探す](chrome-find-searchform.png)
 
 これをクリックしたときに右側でも対応する部分が選択されます。選択された部分を見ると `id="searchform"`
 という文字が見えます。この `searchform` という名前を使って JavaScript でこの要素を消します。
@@ -182,7 +182,7 @@ searchForm.remove();
 
 ブラウザで拡張機能を再読み込みしてページを再読み込みすると、検索欄が消えているのが分かると思います。
 
-![検索欄が削除された様子](/images/20201212-browser-extension/searchform-removed.png)
+![検索欄が削除された様子](searchform-removed.png)
 
 さて、上の例では `id` を使って要素を削除しましたが、`id` が全要素にあるわけではないということに
 気づいた人がいるかもしれません。
@@ -208,7 +208,7 @@ searchForm.style.backgroundColor = 'yellow';
 
 すると検索欄部分の背景色が黄色になりました。
 
-![背景色を黄色にする](/images/20201212-browser-extension/set-background-yellow.png)
+![背景色を黄色にする](set-background-yellow.png)
 
 ## 拡張機能をパッケージングする
 
@@ -220,7 +220,7 @@ Windows の場合は作ったファイル (`manifest.json` と `main.js`) を選
 
 Mac の場合も Finder から同様の操作ができると思います。
 
-![Firefoxで拡張機能のパッケージをインストールする](/images/20201212-browser-extension/installed-package-firefox.png)
+![Firefoxで拡張機能のパッケージをインストールする](installed-package-firefox.png)
 
 ## 最後に
 

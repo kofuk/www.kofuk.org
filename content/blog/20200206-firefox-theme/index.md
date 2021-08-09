@@ -17,7 +17,7 @@ tags:
 
 で，最終的にこういう感じ。
 
-![screenshot](/images/20200206-firefox-theme/screenshot.png)
+![screenshot](screenshot.png)
 
 そういや今日やったのではないけど，新しいタブのページの中の最近アクセスしたページ
 の一覧とかは使ったためしがないので設定で消してる。

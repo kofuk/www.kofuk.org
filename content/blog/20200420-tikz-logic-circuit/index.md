@@ -40,7 +40,7 @@ TikZ を使い始めて間もないのであまりきれいに書けていない
 \end{tikzpicture}
 ```
 
-![example](/images/20200420-tikz-logic-circuit/example.png)
+![example](example.png)
 
 入力を反転することもできて，`inputs` に `inverted` を入れれば良い。
 また，縦に描画したい場合は `rotate=270` とかする。

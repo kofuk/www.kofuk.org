@@ -71,6 +71,6 @@ int main(int argc, char **argv) {
 このキャプチャはインスペクタを表示して、ソースコード眺めてたら目についた `console.screenshot()` というのを
 呼んでみたところ。
 
-![インスペクタ](/images/20201103-webkitgtk-show-inspector/inspector.png)
+![インスペクタ](inspector.png)
 
 どうでもいいけど WebKit のソースいじったりしていろいろやろうと思っている（思いつき）。

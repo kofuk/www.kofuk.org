@@ -57,7 +57,7 @@ kvmap というパッケージが TeX Live にもともと入っていて，そ�
 
 その結果下のようなカルノーマップが描画される。
 
-![exmple](/images/20200425-latex-kvmap/example1.png)
+![exmple](example1.png)
 
 これは問題だ。
 
@@ -67,7 +67,7 @@ kvmap というパッケージが TeX Live にもともと入っていて，そ�
 最新のバージョンだと `hinvert=false` や `vinvert=false` を指定することで
 どちらかを無効化することができる。それを使って描画したのが以下。
 
-![example](/images/20200425-latex-kvmap/example2.png)
+![example](example2.png)
 
 たぶんいらんけどソースコード。
 

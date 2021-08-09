@@ -15,7 +15,7 @@ CMake で Makefile とか生成したときにできる `edit_cache` ターゲ�
 
 `make edit_cache` とかで起動する。
 
-![edit_cache](/images/20210228-cmake-edit-cache/editcache.png)
+![edit_cache](editcache.png)
 
 するとデフォルトだと `CMAKE_INSTALL_PREFIX` と `CMAKE_BUILD_TYPE` が出るっぽい。
 まあ現実的に変えたそうなやつだし妥当だと思う。

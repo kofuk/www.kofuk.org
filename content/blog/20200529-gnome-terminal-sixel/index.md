@@ -29,7 +29,7 @@ tags:
 
 で，動かしたところいい感じに動いている感じがする。
 
-![](/images/20200529-gnome-terminal-sixel/screenshot.png)
+![](screenshot.png)
 
 まあ前からあったパッチをごにょごにょといじって作っているらしいので動くようにできるところは
 新しくはないかも。

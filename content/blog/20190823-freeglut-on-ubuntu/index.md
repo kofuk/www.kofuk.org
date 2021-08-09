@@ -55,7 +55,7 @@ $ gcc main.c -lglut -lGLU -lGL -lm
 
 できました．
 
-![screenshot](/images/20190823-freeglut-on-ubuntu/screenshot.png)
+![screenshot](screenshot.png)
 
 # 適当に Makefile にしておく
 

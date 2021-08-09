@@ -10,7 +10,7 @@ tags:
 いろんなワードで `pacman -Ss` してみて眺めていたら，`termtosvg` というやつを
 見つけたので試してみた。
 
-![](/images/20200227-termtosvg/capture.svg)
+![](capture.svg)
 
 結論：すごい。ただ alternative screen buffer ができないみたい。
 

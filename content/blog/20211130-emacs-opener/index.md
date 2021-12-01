@@ -59,6 +59,9 @@ introspect 用のメソッドとかを実装しておかないと他のツール
 扱いやすいように global な minor-mode にまとめました。
 (名前は適当に remocon-mode にしました。ところでリモコンという略称は和製らしいですね)。
 
+現状ファイルを開く機能しかないですが、もちろん他の機能を叩くためのメソッドを生やすことも可能なので
+思いついたら実装していきたいです。
+
 [ソースコード](https://github.com/kofuk/emacs-config/blob/67aa84c97b7f4466043047f322819bbe901f897d/site-lisp/remocon.el)
 
 ## シェル側の細工

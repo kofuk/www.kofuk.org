@@ -3,7 +3,7 @@ title: "WebAssemblyを触ってみた"
 date: 2021-11-30T21:27:20+09:00
 tags:
   - development
-  - WebAssmbly
+  - WebAssembly
 ---
 
 めっちゃお久しぶりです。

@@ -1,7 +1,7 @@
 ---
 title: "作ったもの"
 date: 2020-08-28T12:58:02+09:00
-lastmod: 2021-04-14T17:03:19+09:00
+lastmod: 2021-12-05T00:07:22+09:00
 menu:
   main:
     name: Works
@@ -17,6 +17,9 @@ menu:
 
 ## 2021
 
+- sfmparser ([GitHub](https://github.com/kofuk/smfparser))
+    - Standard MIDI File のパーサ。
+    - WebAssembly を使って JavaScript から呼べるようにしたりしている。
 - mpfix ([GitHub](https://github.com/kofuk/mpfix))
     - Windows で mp3 のメタデータが Shift\_JIS になってしまうので、UTF-8 に変換する。
 
@@ -29,6 +32,8 @@ menu:
 - ben ([GitHub](https://github.com/kofuk/ben))
     - Binary wo E-kanji de Nagameru yatsu（適当すぎる命名）。
     - バイナリファイルを手動でパースしないといけないとき用。
+    - 結局こういう用途では Python の `struct.unpack` とかを使うようになってしまったため、
+    あんまり使わなくなってしまった。もっと拡張して楽に見られるようにすればかなり良さそうなのだが。
 - web-search-filter ([GitHub](https://github.com/kofuk/web-search-filter))
     - Google 検索の結果からいらない（主観）結果を除外する Firefox アドオン。
     - Mozilla に署名してもらうの面倒なので Developer Edition を使うことにしている。

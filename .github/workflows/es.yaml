@@ -1,0 +1,35 @@
+name: es
+on: 'push'
+
+jobs:
+  es:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          submodules: 'true'
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+      - name: Restore Cache
+        uses: actions/cache@v2
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+      - name: Configure Build
+        run: |
+          mkdir layouts/_default
+          cp etc/list.bonsai.json layouts/_default/.
+          cat etc/gen-bonsai-json.config.snippet >>config.toml
+      - name: Build
+        run: hugo    # we don't like minification.
+      - name: Push to Elasticsearch
+        env:
+          ELASTICSEARCH_URL: ${{ secrets.ELASTICSEARCH_URL }}
+        run: |
+          curl -X PUT "${ELASTICSEARCH_URL}/_bulk" -H 'Content-Type: application/x-ndjson' --data-binary '@public/bonsai.json'

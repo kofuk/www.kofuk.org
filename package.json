@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "kofuk-org",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/script.js",
+  "scripts": {
+    "build": "webpack",
+    "fmt": "prettier --write  'workers/**/*.{js,ts}'",
+    "lint": "eslint --max-warnings=0 src && prettier --check 'workers/**/*.{js,ts}'",
+    "start": "hugo && miniflare --site ./public",
+    "publish": "wrangler publish"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/kv-asset-handler": "~0.1.2",
+    "@cloudflare/workers-types": "^3.4.0",
+    "@types/service-worker-mock": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-typescript": "^3.0.0",
+    "miniflare": "^2.3.0",
+    "prettier": "^2.6.0",
+    "ts-loader": "^9.2.8",
+    "typescript-language-server": "^0.9.7",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

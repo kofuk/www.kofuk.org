@@ -1,0 +1,17 @@
+name = "kofuk-org"
+type = "javascript"
+route = ''
+zone_id = ''
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2022-03-17"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[site]
+bucket = "./public"
+entry-point = ""

@@ -101,6 +101,11 @@ $ npx miniflare --site ./public
 
 みたいにすればいいみたいです。Worker の変数 (vars) は `.env` ファイルに書いておけば、それを使ってくれました。
 
+## 問題点
+
+適当に Elasticsearch に insert ばかりが行われているので消した記事がリークしてたり古い内容をもとに
+検索が行われてしまったりしてそう。いつか直す
+
 #### 参考資料
 
 - [Cloudflare Workers®](https://workers.cloudflare.com/)

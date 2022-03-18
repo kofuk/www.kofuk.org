@@ -29,6 +29,7 @@ enableEmoji = true
   mainSections = "blog"
   dateformat = "2006-01-02"
   mathjax = true
+  customJS = ['js/search.js']
 
 [Params.style.vars]
   highlightColor = "#0032a8"
@@ -37,7 +38,7 @@ enableEmoji = true
   home = "right"
   list = "right"
   single = "right"
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["site_search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
   recent_num = 5

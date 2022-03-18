@@ -5,7 +5,7 @@
   "description": "",
   "main": "./dist/script.js",
   "scripts": {
-    "build": "webpack",
+    "build_workers": "webpack",
     "fmt": "prettier --write  'workers/**/*.{js,ts}'",
     "lint": "eslint --max-warnings=0 src && prettier --check 'workers/**/*.{js,ts}'",
     "start": "hugo && miniflare --site ./public",

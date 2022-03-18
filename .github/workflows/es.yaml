@@ -32,4 +32,4 @@ jobs:
         env:
           ELASTICSEARCH_URL: ${{ secrets.ELASTICSEARCH_URL }}
         run: |
-          curl -X PUT "${ELASTICSEARCH_URL}/_bulk" -H 'Content-Type: application/x-ndjson' --data-binary '@public/bonsai.json'
+          curl -X PUT "${ELASTICSEARCH_URL}/_bulk?refresh" -H 'Content-Type: application/x-ndjson' --data-binary '@public/bonsai.json'

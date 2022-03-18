@@ -161,6 +161,15 @@ const hideSearchResult = (pushState) => {
             mainElement.appendChild(a);
         }
     }
+
+    if (pagination !== null) {
+        document.querySelector('div.primary').insertBefore(pagination, mainElement.nextSibling);
+    }
+
+    if (pushState) {
+        const url = new URL(location.href);
+        history.pushState({}, '', url.pathname);
+    }
 };
 
 const revertStateFromUrl = () => {
@@ -223,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ev.preventDefault();
         const searchQuery = document.getElementById('searchField').value;
         if (searchQuery.length === 0) {
-            hideSearchResult();
+            hideSearchResult(true);
             return;
         }
 

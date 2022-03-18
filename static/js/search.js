@@ -237,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         doSearch(searchQuery, 1, true);
+        scroll(0, 0);
     });
 });
 

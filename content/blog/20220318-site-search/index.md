@@ -62,6 +62,9 @@ Bulk API を叩いています。
 
 ## Cloudflare Workers について
 
+こちらも無料枠でやっています。Workers は 1 日あたり 100000 回、 KV は書き込み 1000 回、読み取り 10 万回までの制限がありますが、
+今のところ気にしなくても大丈夫そうです。
+
 エッジで動く ServiceWorker です。JavaScript か WebAssembly がデプロイできます。
 ServiceWorker というだけあって Node.js の API が使えないので、[@elastic/elasticsearch](https://www.npmjs.com/package/@elastic/elasticsearch)
 が使えないっていうんでちょっとウンウン唸ってたんですが、普通に Elasticsearch の REST API 叩けばいいことに気づいたので

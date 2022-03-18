@@ -38,6 +38,12 @@ jobs:
           curl -X PUT "${ELASTICSEARCH_URL}/_bulk?refresh" -H 'Content-Type: application/x-ndjson' --data-binary '@public/bonsai.json'
       - name: Remove Unnecessary File
         run: rm ./public/bonsai.json
+      - name: Create wrangler.toml
+        env:
+          CLOUDFLARE_ROUTE: ${{ secrets.CF_ROUTE }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+        run: |
+          sed "s@CLOUDFLARE_ROUTE@${CLOUDFLARE_ROUTE}@;s@CLOUDFLARE_ZONE_ID@${CLOUDFLARE_ZONE_ID}@;s@^workers_dev@# &@g" wrangler.toml.example >wrangler.toml
       - name: Deploy Site
         uses: cloudflare/wrangler-action@1.3.0
         with:

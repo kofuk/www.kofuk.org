@@ -2,7 +2,7 @@ name: deploy
 on: 'push'
 
 env:
-  HUGO_VERSION: '0.93.2'
+  HUGO_VERSION: '0.95.0'
 
 jobs:
   deploy:

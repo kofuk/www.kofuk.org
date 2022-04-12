@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "allowUnreachableCode": false,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "noEmit": true
+  }
+}

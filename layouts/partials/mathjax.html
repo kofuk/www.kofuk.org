@@ -1,0 +1,11 @@
+{{ if and .IsPage (eq (.Param "mathjax") true) }}
+<script src="{{ .Param "mathjaxPath" | default "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" }}{{ with .Param "mathjaxConfig" | default "TeX-AMS-MML_HTMLorMML" }}?config={{ . }}{{ end }}" async></script>
+{{ end }}
+
+{{/* This is not actually a MathJax-related code, but I've no choice but using this template
+     to inject this script to achieve this with minimal duplicate of code. */}}
+{{ with resources.Get "js/search.tsx" }}
+{{ $options := dict "targetPath" "js/search.js" }}
+{{ $js := resources.Get . | js.Build $options }}
+<script src="{{ $js.RelPermalink }}"></script>
+{{ end }}

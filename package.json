@@ -6,10 +6,11 @@
   "main": "./dist/script.js",
   "scripts": {
     "build_workers": "webpack",
-    "fmt": "prettier --write  'workers/**/*.{js,ts}'",
+    "fmt": "prettier --write  'workers/**/*.{js,ts}' 'assets/js/*.tsx'",
     "lint": "eslint --max-warnings=0 src && prettier --check 'workers/**/*.{js,ts}'",
     "start": "hugo && miniflare --site ./public",
-    "publish": "wrangler publish"
+    "publish": "wrangler publish",
+    "typecheck": "npx tsc -p assets/js/tsconfig.json"
   },
   "author": "",
   "license": "MIT",

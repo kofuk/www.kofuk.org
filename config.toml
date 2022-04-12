@@ -29,7 +29,7 @@ enableEmoji = true
   mainSections = "blog"
   dateformat = "2006-01-02"
   mathjax = true
-  customJS = ['js/search.js']
+#  customJS = ['js/search.js']
 
 [Params.style.vars]
   highlightColor = "#0032a8"

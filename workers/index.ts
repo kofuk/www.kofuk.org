@@ -10,6 +10,7 @@ declare global {
 interface SearchHit {
     title: string;
     summary: string;
+    permalink: string;
     date: number;
     lastmod: number;
     truncated: boolean;
@@ -69,6 +70,7 @@ const handleSearch = async (event: FetchEvent): Promise<Response> => {
         return {
             title: hit._source.title,
             summary: hit._source.summary,
+            permalink: hit._source.permalink,
             date: hit._source.date,
             lastmod: hit._source.lastmod,
             truncated: hit._source.truncated,

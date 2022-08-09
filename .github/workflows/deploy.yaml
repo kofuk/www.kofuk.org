@@ -45,7 +45,7 @@ jobs:
         run: |
           sed "s@CLOUDFLARE_ROUTE@${CLOUDFLARE_ROUTE}@;s@CLOUDFLARE_ZONE_ID@${CLOUDFLARE_ZONE_ID}@;s@^workers_dev@# &@g" wrangler.toml.example >wrangler.toml
       - name: Deploy Site
-        uses: cloudflare/wrangler-action@1.3.0
+        uses: cloudflare/wrangler-action@2.0.0
         with:
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          wranglerVersion: '1.19.8'

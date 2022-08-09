@@ -1,17 +1,13 @@
 name = "kofuk-org"
-type = "javascript"
 route = 'CLOUDFLARE_ROUTE'
-zone_id = 'CLOUDFLARE_ZONE_ID'
-usage_model = ''
+usage_model = 'bundled'
 compatibility_flags = []
 workers_dev = true
 compatibility_date = "2022-03-17"
+main = "./dist/worker.js"
 
 [build]
 command = "npm install && npm run build_workers"
-[build.upload]
-format = "service-worker"
 
 [site]
 bucket = "./public"
-entry-point = ""

@@ -15,6 +15,26 @@ menu:
 ただし、2019 年くらいから前は記憶をたどって書いているので時期は正確じゃないかもしれない。
 あと最近は作るたびに書いているのでちょっとしたツールでも書いている。
 
+## 2022
+
+- premises ([GitHub](https://github.com/kofuk/premises))
+    - Minecraft のマルチプレイヤーサーバを ConoHa に立てるというやつ
+    - [これ](https://codelabo.com/posts/20210308183929)の真似だが、いろいろ機能を充実させた
+    - 設定画面用のサーバと ConoHa と Mega のアカウント、Cloudflare で管理しているドメインがあれば割と
+    すぐ環境構築できるはず
+    - これ自体とはあんまり関係ないが、ConoHa のサーバのスペックが意外と低いので思ったよりお金がかかる
+- exasm ([GitHub](https://github.com/kofuk/exasm), [詳細な説明](/blog/20220131-emulator/))
+    - 大学の実験で作った CPU 用のアセンブラとエミュレータとデバッガ
+    - CLI フロントエンドと Web Assmbly によるブラウザのフロントエンドがある (ブラウザがメイン)
+- risp ([GitHub](https://github.com/kofuk/risp))
+    - 自作 LISP 処理系
+    - 割と Emacs Lisp を真似している
+    - なんか GC がバグっているがまだ直せていない
+- electron-gopher ([GitHub](https://github.com/kofuk/electron-gopher))
+    - デスクトップ上を Gopher が歩き回るというもの
+    - 手に何か持たせたりとかできるようにした
+    - ちなみにあんまり Electron は好きではない
+
 ## 2021
 
 - sfmparser ([GitHub](https://github.com/kofuk/smfparser))

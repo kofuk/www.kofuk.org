@@ -26,7 +26,7 @@ jobs:
             ${{ runner.os }}-hugomod-
       - name: Configure Build
         run: |
-          mkdir layouts/_default
+          mkdir -p layouts/_default
           cp etc/list.bonsai.json layouts/_default/.
           cat etc/gen-bonsai-json.config.snippet >>config.toml
       - name: Build

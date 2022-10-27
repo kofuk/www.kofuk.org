@@ -5,7 +5,7 @@ lastmod: 2021-12-05T00:07:22+09:00
 menu:
   main:
     name: Works
-    weight: 10
+    weight: 0
 ---
 
 ある程度形になったものを適当に書き連ねておくリスト。

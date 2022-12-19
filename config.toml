@@ -56,6 +56,12 @@ enableEmoji = true
   email = "ko.fu.dev+blog {a} gmail.com"
 
 [[Params.widgets.social.custom]]
+  title = "Mastodon"
+  url = "https://mastodon.social/@kofuk"
+  icon = "svg/mastodon.svg"
+  rel = "me"
+
+[[Params.widgets.social.custom]]
   title = "View Source Repository"
   url = "https://github.com/kofuk/www.kofuk.org"
   icon = "svg/repo.svg"

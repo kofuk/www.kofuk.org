@@ -3,32 +3,25 @@
   "name": "kofuk-org",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/script.js",
   "scripts": {
-    "build_workers": "webpack",
-    "fmt": "prettier --write  'workers/**/*.{js,ts}' 'assets/js/*.tsx'",
-    "lint": "eslint --max-warnings=0 src && prettier --check 'workers/**/*.{js,ts}'",
-    "start": "hugo && wrangler dev --local",
-    "publish": "wrangler publish",
+    "functions:build": "webpack",
+    "functions:watch": "webpack --watch",
+    "prettier": "prettier --write 'assets/js/*.tsx' 'functions/**/*.ts'",
+    "start": "hugo && wrangler pages dev public/",
     "typecheck": "tsc -p assets/js/tsconfig.json"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/kv-asset-handler": "^0.2.0",
-    "@cloudflare/workers-types": "^3.14.1",
+    "@cloudflare/workers-types": "^4.20221111.1",
     "@types/service-worker-mock": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-typescript": "^3.0.0",
     "prettier": "^2.7.1",
-    "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "typescript-language-server": "^1.0.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "wrangler": "^2.0.24"
+    "wrangler": "^2.6.2"
   }
 }

@@ -2,5 +2,5 @@
 /.hugo_build.lock
 /dist
 /node_modules
-/.env
-/wrangler.toml
+/.*.vars
+!/.example.vars

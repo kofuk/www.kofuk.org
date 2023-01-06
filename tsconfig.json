@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "module": "commonjs",
+    "outDir": "./functions",
     "target": "esnext",
+    "module": "esnext",
     "lib": ["esnext"],
     "alwaysStrict": true,
     "strict": true,
@@ -11,11 +11,10 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "types": [
-      "@cloudflare/kv-asset-handler",
       "@cloudflare/workers-types",
       "@types/service-worker-mock"
     ]
   },
-  "include": ["workers"],
-  "exclude": ["node_modules", "dist", "test"]
+  "include": ["functions-src/**/*"],
+  "exclude": ["functions/**/*"]
 }

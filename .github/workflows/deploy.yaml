@@ -2,11 +2,12 @@ name: deploy
 on: 'push'
 
 env:
-  HUGO_VERSION: '0.95.0'
+  HUGO_VERSION: '0.108.0'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -36,15 +37,3 @@ jobs:
           ELASTICSEARCH_URL: ${{ secrets.ELASTICSEARCH_URL }}
         run: |
           curl -X PUT "${ELASTICSEARCH_URL}/_bulk?refresh" -H 'Content-Type: application/x-ndjson' --data-binary '@public/bonsai.json'
-      - name: Remove Unnecessary File
-        run: rm ./public/bonsai.json
-      - name: Create wrangler.toml
-        env:
-          CLOUDFLARE_ROUTE: ${{ secrets.CF_ROUTE }}
-        run: |
-          sed "s@CLOUDFLARE_ROUTE@${CLOUDFLARE_ROUTE}@;s@^workers_dev@# &@g" wrangler.toml.example >wrangler.toml
-      - name: Deploy Site
-        uses: cloudflare/wrangler-action@2.0.0
-        with:
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          apiToken: ${{ secrets.CF_API_TOKEN }}

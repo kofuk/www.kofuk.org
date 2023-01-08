@@ -11,18 +11,13 @@ googleAnalytics = ""
 newContentEditor = "emacs"
 enableEmoji = true
 
-[Author]
-  name = "Koki Fukuda"
-  bio = "GNU/Linux, Bash, C++, Emacs が好きな地球人。完全理解者に早くなりたい。"
-  avatar = "https://www.gravatar.com/avatar/621e74aa419b530d81adb56ddc16db12?s=0"
-
 [Params]
   description = "主に技術的な情報を自分用のメモを兼ねて書いています。"
-  copyright = "Koki Fukuda"
+  copyright = "kofuk"
   opengraph = true
   twitter_cards = true
   readmore = true
-  authorbox = true
+  authorbox = false
   toc = false
   pager = true
   post_meta = ["date", "categories", "translations"]

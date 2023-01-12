@@ -2,8 +2,6 @@
 title: "Linux From Scratch"
 date: 2020-02-23T01:01:52+09:00
 
-categories:
-  - diary
 tags:
   - GNU/Linux
 ---

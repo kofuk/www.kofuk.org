@@ -1,9 +1,6 @@
 ---
 title: "「Javaで書いてあるからどのOSでも動く」の話"
 date: 2020-05-21T22:14:23+09:00
-
-categories:
-  - diary
 ---
 
 僕は[Write once, debug anywhere](https://ja.wikipedia.org/wiki/Write_once,_run_anywhere#%E6%89%B9%E5%88%A4)

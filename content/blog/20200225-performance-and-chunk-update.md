@@ -2,8 +2,6 @@
 title: "チャンクアップデートの最初幅を使ってパフォーマンスチューニングした"
 date: 2020-02-25T22:42:51+09:00
 
-categories:
-  - diary
 tags:
   - C++
   - development

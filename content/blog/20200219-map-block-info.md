@@ -2,8 +2,6 @@
 title: "Minecraft のマップの改造など"
 date: 2020-02-19T18:28:25+09:00
 
-categories:
-  - diary
 tags:
   - development
   - GNU/Linux

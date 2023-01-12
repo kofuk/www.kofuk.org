@@ -2,8 +2,6 @@
 title: "for と while"
 date: 2020-02-26T19:05:28+09:00
 
-categories:
-  - diary
 tags:
   - C
   - development

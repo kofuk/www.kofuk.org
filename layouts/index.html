@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="article-list">
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "blog") }}
+  {{ range $paginator.Pages }}
+  {{ partial "summary" . }}
+  {{ end }}
+</div>
+
+{{ partial "pagination" . }}
+
+{{ end }}

@@ -1,0 +1,44 @@
+footer {
+    color: #bbb;
+    background-color: #525252;
+    padding: 15px;
+
+    a {
+        color: #bbb;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    div.links {
+        margin: 0 200px;
+        display: flex;
+        justify-content: center;
+
+        @media ($mobile) {
+            display: unset;
+        }
+
+        h4 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .block {
+            min-width: 400px;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 50px;
+            padding: 20px;
+        }
+
+        ul.maybe-very-long>li:nth-child(odd) {
+            float: left;
+            width: 200px;
+        }
+    }
+}

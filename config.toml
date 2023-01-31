@@ -3,60 +3,10 @@ title = "チラシの表の反対側"
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 paginate = "10"
-theme = "Mainroad"
 hasCJKLanguage = true
 summaryLength = 300
-disqusShortname = ""
-googleAnalytics = ""
-newContentEditor = "emacs"
 enableEmoji = true
 
 [Params]
-  description = "主に技術的な情報を自分用のメモを兼ねて書いています。"
-  copyright = "kofuk"
-  opengraph = true
-  twitter_cards = true
-  readmore = true
-  authorbox = false
   toc = false
-  pager = true
-  post_meta = ["date", "categories", "translations"]
-  mainSections = "blog"
-  dateformat = "2006-01-02"
-  mathjax = true
-#  customJS = ['js/search.js']
-
-[Params.style.vars]
-  highlightColor = "#0032a8"
-
-[Params.sidebar]
-  home = "right"
-  list = "right"
-  single = "right"
-  widgets = ["site_search", "recent", "categories", "taglist", "social", "languages"]
-
-[Params.widgets]
-  recent_num = 5
-  tags_counter = true
-
-[Params.widgets.social]
-  facebook = ""
-  twitter = "man_2_fork"
-  instagram = ""
-  linkedin = ""
-  telegram = ""
-  github = "kofuk"
-  gitlab = "KoFuk"
-  bitbucket = ""
-  email = "ko.fu.dev+blog {a} gmail.com"
-
-[[Params.widgets.social.custom]]
-  title = "Mastodon"
-  url = "https://mastodon.social/@kofuk"
-  icon = "svg/mastodon.svg"
-  rel = "me"
-
-[[Params.widgets.social.custom]]
-  title = "View Source Repository"
-  url = "https://github.com/kofuk/www.kofuk.org"
-  icon = "svg/repo.svg"
+  description = "チラシの裏側に書き殴った雑な技術ブログ"

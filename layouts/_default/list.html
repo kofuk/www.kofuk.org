@@ -1,0 +1,22 @@
+{{ define "main" }}
+<h2 class="list-title">{{ .Title }}</h2>
+
+{{ if .Params.internalsearchresultpage }}
+<div id="searchMeta" class="frontmatter"></div>
+{{ end }}
+
+{{ if .Content }}
+<div class="content">
+  {{ .Content }}
+</div>
+{{ end }}
+
+<div class="article-list">
+  {{ range .Paginator.Pages }}
+  {{ partial "summary" . }}
+  {{ end }}
+</div>
+
+{{ partial "pagination" . }}
+
+{{ end }}

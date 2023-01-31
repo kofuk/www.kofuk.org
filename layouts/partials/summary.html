@@ -1,0 +1,18 @@
+<a href="{{ .RelPermalink }}">
+<article>
+  <h3 class="title">{{ .Title }}</h3>
+  <div class="frontmatter">
+    {{ .Date.Format "2006-01-02" }}
+    {{- if ne .Date .Lastmod -}}
+    （最終更新: {{ .Lastmod.Format "2006-01-02" }}）
+    {{- end }}
+  </div>
+  <div class="summary">
+    {{ .Summary }}
+    {{- if .Truncated -}}
+    …
+    <span class="read-more">続きを読む</span>
+    {{ end }}
+  </div>
+</article>
+</a>

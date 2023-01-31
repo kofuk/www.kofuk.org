@@ -22,7 +22,7 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
       - name: Restore Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ env.HUGO_VERSION }}

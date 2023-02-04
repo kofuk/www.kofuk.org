@@ -98,7 +98,7 @@ systemd-boot の設定ファイルを作る。`/boot/loader/entries` の中な�
 title	Arch Linux
 linux	/vmlinuz-linux
 initrd	/initramfs-linux.img
-options	cryptdevice=UUIR=439d2c50-2f60-499a-9819-fea0d2e1adb9:arch_cryptroot root=/dev/mapper/vgroot-root rw
+options	cryptdevice=UUID=439d2c50-2f60-499a-9819-fea0d2e1adb9:arch_cryptroot root=/dev/mapper/vgroot-root rw
 ```
 
 UUID のところには `blkid /dev/nvme0n1p2` とかで取ってきた実際の UUID、`:` 以降は `/dev/mapper` にできるファイル名（なんでもよい）をいれる[^encrypt-hook]。
@@ -107,19 +107,9 @@ UUID のところには `blkid /dev/nvme0n1p2` とかで取ってきた実際の
 
 ## TPM2 を使って起動時に復号
 
-Clevis[^clevis] を使う。（libpwquality と tpm2-tools を入れていなかったので実行時に何度かコケた）
+Clevis[^clevis] を使う。
 
-```plaintext
-# pacman -S clevis libpwquality tpm2-tools
-```
-
-bind というやつをする。
-
-```plaintext
-# clevis luks bind -d /dev/nvme0n1p2 tpm '{}'
-```
-
-mkinitcpio のフックで起動時に復号できるようにする。
+Clevis と mkinitcpio のフックを使って、起動時に復号する。
 AUR から [mkinitcpio-clevis-hook](https://aur.archlinux.org/packages/mkinitcpio-clevis-hook) をインストールする。
 
 `mkinitcpio.conf` の HOOKS の `encrypt` の前に `clevis` を追加する。
@@ -127,6 +117,13 @@ AUR から [mkinitcpio-clevis-hook](https://aur.archlinux.org/packages/mkinitcpi
 ```plaintext
 HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encrypt clevis lvm2 filesystems fsck)
 ```
+
+Clevis の bind というやつをする。
+
+```plaintext
+# clevis luks bind -d /dev/nvme0n1p2 tpm '{}'
+```
+
 
 終了。
 

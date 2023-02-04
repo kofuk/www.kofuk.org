@@ -121,7 +121,7 @@ HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encryp
 Clevis の bind というやつをする。
 
 ```plaintext
-# clevis luks bind -d /dev/nvme0n1p2 tpm '{}'
+# clevis luks bind -d /dev/nvme0n1p2 tpm2 '{}'
 ```
 
 

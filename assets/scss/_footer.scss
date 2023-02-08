@@ -1,3 +1,5 @@
+$singlecol_footer: screen and (max-width: 900px);
+
 footer {
     color: #ccc;
     background-color: #454545;
@@ -17,8 +19,9 @@ footer {
         display: flex;
         justify-content: center;
 
-        @media ($mobile) {
+        @media ($singlecol_footer) {
             display: unset;
+            margin: 0;
         }
 
         h4 {
@@ -28,6 +31,10 @@ footer {
 
         .block {
             min-width: 400px;
+
+            @media ($singlecol_footer) {
+                margin: 0 10px;
+            }
         }
 
         ul {
@@ -36,9 +43,9 @@ footer {
             padding: 20px;
         }
 
-        ul.maybe-very-long>li:nth-child(odd) {
+        ul.maybe-very-long > li:nth-child(odd) {
             float: left;
-            width: 200px;
+            width: 180px;
         }
     }
 }

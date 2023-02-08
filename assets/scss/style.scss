@@ -43,6 +43,7 @@ h1.blog-title {
     $tag_color: #bfbfbf;
     $tag_hover: #eee;
     $colorbox_bgcolor: #006aa8;
+    $fg_dimmed: #aaa;
 
     @import 'themed';
 }
@@ -53,9 +54,10 @@ h1.blog-title {
     $fg_color: black;
     $fg_hover: #666;
     $link_color: blue;
-    $tag_color: grey;
+    $tag_color: #666;
     $tag_hover: #555;
     $colorbox_bgcolor: #0032a8;
+    $fg_dimmed: #666;
 
     @import 'themed';
 }

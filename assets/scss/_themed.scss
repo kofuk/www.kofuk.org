@@ -48,7 +48,7 @@ a {
 
         input {
             width: 200px;
-            background-color: rgba($fg_color, 0.3);
+            background-color: rgba($fg_color, 0.2);
             border: none;
             outline: none;
             padding: 10px 8px;
@@ -63,16 +63,22 @@ a {
 
             &::placeholder {
                 font-style: italic;
-                color: inverted($fg_color);
+                color: $fg_color;
+                transition: color 150ms;
             }
 
             &:hover {
-                background-color: rgba($fg_color, 0.5);
+                background-color: rgba($fg_color, 0.3);
             }
 
             &:focus {
                 width: 400px;
                 background-color: rgba($fg_color, 0.7);
+
+                &::placeholder {
+                    color: invert($fg_color);
+                }
+
 
                 @media ($mobile) {
                     width: 100%;
@@ -116,33 +122,47 @@ div.content-area {
         color: $fg_color;
         transition: color 150ms;
 
-        &:hover {
-            color: $fg_hover;
-        }
-    }
+        article {
+            padding: 20px 30px;
+            margin: 2px 30px;
+            border-bottom: 1px solid rgba($fg_color, 0.2);
 
-    article {
-        padding: 20px 30px;
-        margin: 2px 30px;
-        border-bottom: 1px solid rgba($fg_color, 0.2);
+            @media ($mobile) {
+                margin: 2px 0;
+            }
 
-        @media ($mobile) {
-            margin: 2px 0;
-        }
+            .frontmatter {
+                color: $fg_dimmed;
+                transition: color 150ms;
+            }
 
-        .summary {
-            font-size: 16px;
+            .summary {
+                font-size: 16px;
 
-            .read-more {
-                color: grey;
+                .read-more {
+                    color: $fg_dimmed;
+                    transition: color 150ms;
+                }
             }
         }
-    }
 
-    h3 {
-        font-size: 25px;
-        font-weight: 600;
-        margin: 0 0 0 -10px;
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+            margin: 0 0 0 -10px;
+        }
+
+        &:hover {
+            color: $fg_hover;
+
+            .summary .read-more {
+                color: rgba($fg_dimmed, 0.7);
+            }
+
+            .frontmatter {
+                color: rgba($fg_dimmed, 0.7);
+            }
+        }
     }
 }
 
@@ -169,7 +189,7 @@ h1.article-title {
     padding: 0 30px;
     font-size: 15px;
     text-align: end;
-    color: #858585;
+    color: $fg_dimmed;
 
     ul.tags {
         margin: 0;
@@ -224,8 +244,8 @@ h1.article-title {
     padding: 20px 8px;
     margin-top: 100px;
     justify-content: space-between;
-    border-top: 1px solid rgba($fg_color, 0.3);
-    background-color: rgba($fg_color, 0.05);
+    border-top: 1px solid rgba($fg_color, 0.1);
+    background-color: rgba($fg_color, 0.03);
 
     @media ($mobile) {
         display: block;

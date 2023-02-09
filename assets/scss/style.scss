@@ -1,4 +1,4 @@
-$mobile: screen and (max-width: 780px);
+$mobile_threshold: 780px;
 
 @import 'normalize';
 
@@ -22,7 +22,7 @@ h1.blog-title {
     padding: 25px 40px;
     background: #222;
 
-    @media ($mobile) {
+    @media screen and (max-width: $mobile_threshold) {
         font-size: 28px;
         text-align: center;
     }

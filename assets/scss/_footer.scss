@@ -1,4 +1,4 @@
-$singlecol_footer: screen and (max-width: 900px);
+$singlecol_threshold: 900px;
 
 footer {
     color: #ccc;
@@ -19,7 +19,7 @@ footer {
         display: flex;
         justify-content: center;
 
-        @media ($singlecol_footer) {
+        @media screen and (max-width: $singlecol_threshold) {
             display: unset;
             margin: 0;
         }
@@ -32,7 +32,7 @@ footer {
         .block {
             min-width: 400px;
 
-            @media ($singlecol_footer) {
+            @media screen and (max-width: $singlecol_threshold) {
                 margin: 0 10px;
             }
         }

@@ -13,7 +13,7 @@ a {
 .top-nav {
     display: flex;
     justify-content: end;
-    @media ($mobile) {
+    @media screen and (max-width: $mobile_threshold) {
         display: unset;
         justify-content: unset;
         text-align: center;
@@ -23,7 +23,7 @@ a {
         margin: 5px 0;
         padding: 0;
 
-        @media ($mobile) {
+        @media screen and (max-width: $mobile_threshold) {
             margin: 0;
         }
     }
@@ -42,7 +42,7 @@ a {
         padding: 10px;
         display: block;
 
-        @media ($mobile) {
+        @media screen and (max-width: $mobile_threshold) {
             margin: 0;
         }
 
@@ -57,7 +57,7 @@ a {
             transition: background-color 200ms,
                         width ease 300ms;
 
-            @media ($mobile) {
+            @media screen and (max-width: $mobile_threshold) {
                 width: 100%;
             }
 
@@ -80,7 +80,7 @@ a {
                 }
 
 
-                @media ($mobile) {
+                @media screen and (max-width: $mobile_threshold) {
                     width: 100%;
                 }
             }
@@ -98,7 +98,7 @@ div.content-area {
     div.content {
         padding: 0 80px;
 
-        @media ($mobile) {
+        @media screen and (max-width: $mobile_threshold) {
             padding: 0 20px;
         }
     }
@@ -127,7 +127,7 @@ div.content-area {
             margin: 2px 30px;
             border-bottom: 1px solid rgba($fg_color, 0.2);
 
-            @media ($mobile) {
+            @media screen and (max-width: $mobile_threshold) {
                 margin: 2px 0;
             }
 
@@ -247,7 +247,7 @@ h1.article-title {
     border-top: 1px solid rgba($fg_color, 0.1);
     background-color: rgba($fg_color, 0.03);
 
-    @media ($mobile) {
+    @media screen and (max-width: $mobile_threshold) {
         display: block;
     }
 

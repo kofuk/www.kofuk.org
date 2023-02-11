@@ -17,7 +17,7 @@ footer {
     div.links {
         margin: 0 200px;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
 
         @media screen and (max-width: $singlecol_threshold) {
             display: unset;

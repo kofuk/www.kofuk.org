@@ -2,8 +2,14 @@ body {
     color: $fg_color;
 }
 
-a {
+a, .link {
     color: $link_color;
+    background: none;
+    border: none;
+    font-size: 100%;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
 }
 
 .outer-container {
@@ -11,26 +17,9 @@ a {
 }
 
 .top-nav {
-    display: flex;
-    justify-content: end;
+    text-align: right;
     @media screen and (max-width: $mobile_threshold) {
-        display: unset;
-        justify-content: unset;
         text-align: center;
-    }
-
-    ul {
-        margin: 5px 0;
-        padding: 0;
-
-        @media screen and (max-width: $mobile_threshold) {
-            margin: 0;
-        }
-    }
-
-    li {
-        display: inline-block;
-        padding: 10px 3px;
     }
 
     a {
@@ -246,10 +235,6 @@ h1.article-title {
     justify-content: space-between;
     border-top: 1px solid rgba($fg_color, 0.1);
     background-color: rgba($fg_color, 0.03);
-
-    @media screen and (max-width: $mobile_threshold) {
-        display: block;
-    }
 
     a {
         width: 100%;

@@ -41,10 +41,6 @@
     <div class="outer-container">
       <div class="content-area">
         <nav class="top-nav">
-          <ul>
-            <li><a href="{{ "/profile/" | relURL }}">プロフィール</a></li>
-            <li><a href="{{ "/profile/works/" | relURL }}">作ったもの</a></li>
-          </ul>
           <form action="{{ "/search/" | relURL }}">
             <input id="searchField" name="q" type="search" placeholder="検索..." aria-label="ここに入力して記事を検索">
           </form>
@@ -73,6 +69,13 @@
           </ul>
         </div>
         <div class="block">
+          <h4>kofuk について</h4>
+
+          <ul>
+            <li><a href="{{ "/profile/" | relURL }}">プロフィール</a></li>
+            <li><a href="{{ "/profile/works/" | relURL }}">作ったもの</a></li>
+          </ul>
+
           <h4>ソーシャル</h4>
           <ul>
             <li><a href="https://twitter.com/man_2_fork" target="_blank" rel="noreferrer noopener">Twitter</a></li>
@@ -84,7 +87,9 @@
           <ul>
             <li>
               {{ if .IsPage }}
-              <a href="https://github.com/kofuk/www.kofuk.org/blob/master/content/{{ .File }}" target="_blank" rel="noreferrer noopener nofollow">このページのソースコード</a>
+              <a href="https://github.com/kofuk/www.kofuk.org/blob/master/content/{{ .File }}" target="_blank" rel="noreferrer noopener nofollow">
+                このページのソースコード
+              </a>
               {{ else }}
               <a href="https://github.com/www.kofuk.org" target="_blank" rel="noreferrer noopener">ソースコード</a>
               {{ end }}
@@ -96,7 +101,11 @@
 
       <div class="copyright">
         Copyright © 2019-2023 kofuk<br>
-        このページは <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution-ShareAlike 4.0 International License</a> の下に提供されています
+        このページは
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer noopener">
+          Creative Commons Attribution-ShareAlike 4.0 International License
+        </a>
+        の下に提供されています
       </div>
     </footer>
   </body>

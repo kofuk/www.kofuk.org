@@ -87,11 +87,11 @@
           <ul>
             <li>
               {{ if .IsPage }}
-              <a href="https://github.com/kofuk/www.kofuk.org/blob/master/content/{{ .File }}" target="_blank" rel="noreferrer noopener nofollow">
+              <a href="https://github.com/kofuk/www.kofuk.org/blob/master/content/{{ .File }}?plain=1" target="_blank" rel="noreferrer noopener nofollow">
                 このページのソースコード
               </a>
               {{ else }}
-              <a href="https://github.com/www.kofuk.org" target="_blank" rel="noreferrer noopener">ソースコード</a>
+              <a href="https://github.com/www.kofuk.org" target="_blank" rel="noreferrer noopener nofollow">ソースコード</a>
               {{ end }}
             </li>
             <li><a href="{{ "index.xml" | relURL }}">RSS フィードを購読</a></li>

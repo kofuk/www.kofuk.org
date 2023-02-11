@@ -1,0 +1,252 @@
+@mixin mobile {
+    @media screen and (max-width: 780px) {
+        @content;
+    }
+}
+
+@mixin singlecol_footer {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+h1.blog-title {
+    margin: 0;
+    padding: 25px 40px;
+
+    @include mobile {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+.skip-to-main {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    padding: 10px 30px;
+
+    &:focus {
+        top: 0;
+    }
+}
+
+a, .link {
+    font-size: 100%;
+    cursor: pointer;
+    padding: 0;
+}
+
+.top-nav {
+    text-align: right;
+
+    @include mobile {
+        text-align: center;
+    }
+
+    form {
+        margin: 0 50px 0 0;
+        padding: 10px;
+        display: block;
+
+        @include mobile {
+            margin: 0;
+        }
+
+        input {
+            width: 200px;
+            padding: 10px 8px;
+            font-size: 15px;
+
+            @include mobile {
+                width: 100%;
+            }
+
+            &:focus {
+                width: 400px;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+div.content-area {
+    margin: 0 auto;
+    max-width: 950px;
+    min-height: 100vh;
+    padding: 20px 0;
+
+    div.content {
+        padding: 0 80px;
+
+        @include mobile {
+            padding: 0 20px;
+        }
+    }
+}
+
+.article-list {
+    a {
+        article {
+            padding: 20px 30px;
+            margin: 2px 30px;
+
+            @include mobile {
+                margin: 2px 0;
+            }
+
+            .summary {
+                font-size: 16px;
+
+            }
+        }
+
+        h3 {
+            font-size: 25px;
+            margin: 0 0 0 -10px;
+        }
+    }
+}
+
+.content {
+    margin-top: 30px;
+
+    @import 'markdown/dimension';
+}
+
+h1.article-title {
+    font-size: 33px;
+    margin: 0;
+    padding: 15px 20px;
+    line-height: 100%;
+}
+
+.list-title {
+    margin: 0;
+    padding: 15px 20px;
+    line-height: 100%;
+}
+
+.frontmatter {
+    padding: 0 30px;
+    font-size: 15px;
+    text-align: end;
+
+    ul.tags {
+        margin: 0;
+
+        li {
+            display: inline;
+        }
+
+        a {
+            padding-inline: 15px;
+        }
+    }
+}
+
+.paginator {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+
+    .count {
+        padding: 10px 20px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    .prev::before {
+        content: '‹ ';
+        font-size: 25px;
+    }
+
+    .next::after {
+        content: ' ›';
+        font-size: 25px;
+    }
+}
+
+.pager {
+    display: flex;
+    padding: 20px 8px;
+    margin-top: 100px;
+    justify-content: space-between;
+
+    a {
+        width: 100%;
+        display: block;
+        text-decoration: none;
+    }
+
+    .link-name {
+        font-size: 15px;
+    }
+
+    .article-title {
+        font-size: 18px;
+    }
+
+    .next {
+        text-align: right;
+
+        .article-title {
+            margin-right: 8px;
+        }
+    }
+
+    .prev {
+        .article-title {
+            margin-left: 8px;
+        }
+    }
+}
+
+footer {
+    padding: 15px;
+
+    .copyright {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    div.links {
+        margin: 0 200px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include singlecol_footer {
+            display: unset;
+            margin: 0;
+        }
+
+        h4 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .block {
+            min-width: 400px;
+
+            @include singlecol_footer {
+                margin: 0 10px;
+            }
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 50px;
+            padding: 20px;
+        }
+
+        ul.maybe-very-long > li:nth-child(odd) {
+            float: left;
+            width: 180px;
+        }
+    }
+}

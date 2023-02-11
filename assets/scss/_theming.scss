@@ -1,0 +1,165 @@
+body {
+    color: $fg_color;
+}
+
+h1.blog-title {
+    background: #222;
+
+    a {
+        color: #eee;
+        text-decoration: none;
+        transition: color 300ms;
+    }
+}
+
+.skip-to-main {
+    background-color: white;
+    color: blue;
+}
+
+a, .link {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: $link_color;
+}
+
+.outer-container {
+    background-color: $container_bgcolor;
+}
+
+.top-nav {
+    a {
+        color: $fg_color;
+    }
+
+    form {
+        input {
+            border: none;
+            outline: none;
+            background-color: rgba($fg_color, 0.2);
+            color: invert($fg_color);
+            transition: background-color 200ms,
+                        width ease 300ms;
+
+            &::placeholder {
+                color: $fg_color;
+                font-style: italic;
+                transition: color 150ms;
+            }
+
+            &:hover {
+                background-color: rgba($fg_color, 0.3);
+            }
+
+            &:focus {
+                background-color: rgba($fg_color, 0.7);
+
+                &::placeholder {
+                    color: invert($fg_color);
+                }
+            }
+        }
+    }
+}
+
+div.content-area {
+    background-color: $main_bgcolor;
+}
+
+.error {
+    border: 2px solid rgba($fg_color, 0.5);
+}
+
+.article-list {
+    a {
+        color: $fg_color;
+        text-decoration: none;
+        transition: color 150ms;
+
+        article {
+            border-bottom: 1px solid rgba($fg_color, 0.2);
+
+            .frontmatter {
+                color: $fg_dimmed;
+                transition: color 150ms;
+            }
+
+            .summary {
+                .read-more {
+                    color: $fg_dimmed;
+                    transition: color 150ms;
+                }
+            }
+        }
+
+        &:hover {
+            color: $fg_hover;
+
+            .summary .read-more {
+                color: rgba($fg_dimmed, 0.7);
+            }
+
+            .frontmatter {
+                color: rgba($fg_dimmed, 0.7);
+            }
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+    }
+}
+
+.content {
+    margin-top: 30px;
+
+    @import 'markdown/theming';
+}
+
+.frontmatter {
+    color: $fg_dimmed;
+
+    ul.tags {
+        a {
+            background-color: $tag_color;
+            color: invert($fg_color);
+            text-decoration: none;
+            border: 1px solid;
+            border-radius: 10px 2px 2px 10px;
+            transition: background-color 150ms;
+
+            &:hover {
+                background-color: $tag_hover;
+            }
+        }
+    }
+}
+
+.paginator {
+    a {
+        color: $fg_color;
+    }
+}
+
+.pager {
+    border-top: 1px solid rgba($fg_color, 0.1);
+    background-color: rgba($fg_color, 0.03);
+
+    a {
+        color: $fg_color;
+    }
+
+    .article-title {
+        font-size: 18px;
+    }
+}
+
+footer {
+    color: #ccc;
+    background-color: #454545;
+
+    a {
+        color: #ccc;
+    }
+}

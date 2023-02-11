@@ -1,38 +1,6 @@
-$mobile_threshold: 780px;
-
 @import 'normalize';
 
-@import 'footer';
-
-.skip-to-main {
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: -100%;
-    padding: 10px 30px;
-    color: blue;
-
-    &:focus {
-        top: 0;
-    }
-}
-
-h1.blog-title {
-    margin: 0;
-    padding: 25px 40px;
-    background: #222;
-
-    @media screen and (max-width: $mobile_threshold) {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    a {
-        color: #eee;
-        text-decoration: none;
-        transition: color 300ms;
-    }
-}
+@import 'dimension';
 
 @media(prefers-color-scheme: dark) {
     $container_bgcolor: #272727;
@@ -45,7 +13,7 @@ h1.blog-title {
     $colorbox_bgcolor: #006aa8;
     $fg_dimmed: #aaa;
 
-    @import 'themed';
+    @import 'theming';
 }
 
 @media(prefers-color-scheme: light) {
@@ -59,6 +27,5 @@ h1.blog-title {
     $colorbox_bgcolor: #0032a8;
     $fg_dimmed: #666;
 
-    @import 'themed';
+    @import 'theming';
 }
-

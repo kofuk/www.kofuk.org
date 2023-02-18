@@ -2,6 +2,7 @@ code {
     font-family: monospace;
     padding-inline: 5px;
     border-radius: 2px;
+    word-break: break-word;
 }
 
 pre {
@@ -12,6 +13,7 @@ pre {
     line-height: 150%;
 
     code {
+        background-color: unset;
         padding-inline: unset;
     }
 }

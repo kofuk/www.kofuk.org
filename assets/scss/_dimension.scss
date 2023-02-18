@@ -100,6 +100,7 @@ div.content-area {
 
             .summary {
                 font-size: 16px;
+                word-break: break-word;
 
             }
         }
@@ -234,6 +235,7 @@ footer {
             min-width: 400px;
 
             @include singlecol_footer {
+                min-width: unset;
                 margin: 0 10px;
             }
         }
@@ -247,6 +249,11 @@ footer {
         ul.maybe-very-long > li:nth-child(odd) {
             float: left;
             width: 180px;
+
+            @include singlecol_footer {
+                float: unset;
+                width: unset;
+            }
         }
     }
 }

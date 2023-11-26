@@ -1,8 +1,5 @@
 name: deploy
-on:
-  push:
-    branches:
-      - 'master'
+on: 'push'
 
 env:
   HUGO_VERSION: '0.108.0'

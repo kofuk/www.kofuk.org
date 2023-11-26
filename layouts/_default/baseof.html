@@ -1,115 +1,72 @@
-<!doctype html>
-<html lang="{{ .Site.Language.Lang }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
-    {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.css" . | toCSS | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Summary }}{{ end }}{{ end }}">
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/schema.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
+<!DOCTYPE html>
+<html class="no-js" lang="{{ .Site.Language.Lang }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
+	{{- if .Site.Params.opengraph }}
+		{{ template "_internal/opengraph.html" . }}
+	{{- end }}
+	{{- if .Site.Params.schema }}
+		{{ template "_internal/schema.html" . }}
+	{{- end }}
+	{{- if .Site.Params.twitter_cards }}
+		{{ template "_internal/twitter_cards.html" . }}
+	{{- end }}
 
-    {{- with .OutputFormats.Get "rss" }}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-    {{- end }}
+	{{- $googleFontsLink := .Site.Params.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
+	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
+	{{- end }}
 
-    {{ if .Params.math }}
-    {{ partial "katex" . }}
-    {{ end }}
+	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	{{ range .Site.Params.customCSS -}}
+	<link rel="stylesheet" href="{{ . | relURL }}">
+	{{- end }}
 
-    {{ if .Params.internalsearchresultpage }}
-    <meta name="robots" content="nofollow,noindex">
-    {{ with resources.Get "js/search.ts" }}
-    {{ $options := dict "targetPath" "js/search.js" }}
-    {{ $js := resources.Get . | js.Build $options }}
-    <script async src="{{ $js.RelPermalink }}"></script>
-    {{ end }}
-    {{ end }}
-    <link rel="icon" href="{{ "/favicon.ico" | relURL }}">
+	{{- with .OutputFormats.Get "rss" }}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
 
-    <link rel="canonical" href="{{ .Permalink }}">
-  </head>
-  <body>
-    <a class="skip-to-main" href="#main">メインコンテンツに進む</a>
+	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	{{- if not .Site.IsServer }}
+		{{- if hasPrefix .Site.GoogleAnalytics "G-" }}
+		{{ template "_internal/google_analytics.html" . }}
+		{{- else }}
+		{{ template "_internal/google_analytics_async.html" . }}
+		{{- end }}
+	{{- end }}
 
-    <header>
-      <h1 class="blog-title"><a href="{{ "" | relURL }}">{{ .Site.Title }}</a></h1>
-    </header>
-
-    <div class="outer-container">
-      <div class="content-area">
-        <nav class="top-nav">
-          <form action="{{ "/search/" | relURL }}">
-            <input id="searchField" name="q" type="search" placeholder="検索..." aria-label="ここに入力して記事を検索">
-          </form>
-        </nav>
-
-        <main id="main">
-          {{- block "main" . }}{{ end }}
-        </main>
-      </div>
-    </div>
-
-    <footer>
-      <div class="links">
-        <div class="block">
-          <h4>タグ</h4>
-          <ul class="maybe-very-long">
-            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-            <li>
-              {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-              <a href="{{ .RelPermalink }}">
-                {{ .Title }} ({{ $taxonomy.Count }})
-              </a>
-              {{ end }}
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="block">
-          <h4>kofuk について</h4>
-
-          <ul>
-            <li><a href="{{ "/profile/" | relURL }}">プロフィール</a></li>
-            <li><a href="{{ "/profile/works/" | relURL }}">作ったもの</a></li>
-          </ul>
-
-          <h4>ソーシャル</h4>
-          <ul>
-            <li><a href="https://github.com/kofuk" target="_blank" rel="noreferrer noopener">GitHub</a></li>
-            <li><a href="https://gitlab.com/kofuk" target="_blank" rel="noreferrer noopener">GitLab</a></li>
-            <li><a href="https://twitter.com/man_2_fork" target="_blank" rel="noreferrer noopener">Twitter</a></li>
-            <li><a href="https://misskey.io/@kofuk" target="_blank" rel="noreferrer noopener">Misskey.io</a></li>
-            <li><a href="https://don.kofuk.org/@kofuk" target="_blank" rel="me noreferrer noopener">Mastodon</a></li>
-            <li><a href="https://mstdn.anqou.net/@kofuk" target="_blank" rel="me noreferrer noopener">Mastodon - わくわく鮟鱇ランド</a></li>
-          </ul>
-
-          <h4>その他</h4>
-          <ul>
-            <li>
-              {{ if .IsPage }}
-              <a href="https://github.com/kofuk/www.kofuk.org/blob/master/content/{{ .File }}?plain=1" target="_blank" rel="noreferrer noopener nofollow">
-                このページのソースコード
-              </a>
-              {{ else }}
-              <a href="https://github.com/www.kofuk.org" target="_blank" rel="noreferrer noopener nofollow">ソースコード</a>
-              {{ end }}
-            </li>
-            <li><a href="{{ "index.xml" | relURL }}">RSS フィードを購読</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="copyright">
-        Copyright © 2019-2023 kofuk<br>
-        このページは
-        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer noopener">
-          Creative Commons Attribution-ShareAlike 4.0 International License
-        </a>
-        の下に提供されています
-      </div>
-    </footer>
-  </body>
+	<link rel="canonical" href="{{ .Permalink }}">
+</head>
+<body class="body">
+	<div class="container container--outer">
+		{{ partial "header" . }}
+		<div class="wrapper flex">
+			<div class="primary">
+			{{ block "main" . }}
+				{{ with .Content }}
+				<div class="content main__content clearfix">
+					{{ . }}
+				</div>
+				{{ end }}
+			{{ end }}
+			</div>
+			{{ partial "sidebar.html" . }}
+		</div>
+		{{ partial "footer" . }}
+	</div>
+<script async defer src="{{ "js/menu.js" | relURL }}"></script>
+{{ range .Site.Params.customJS -}}
+<script src="{{ . | relURL }}"></script>
+{{- end }}
+{{- partial "mathjax.html" . -}}
+</body>
 </html>

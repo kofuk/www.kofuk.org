@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "prettier": "prettier --check 'assets/js/**/*.ts' 'functions/**/*.ts'",
-    "prettier:fix": "prettier --write 'assets/js/**/*.ts' 'functions/**/*.ts'",
+    "functions:build": "webpack",
+    "functions:watch": "webpack --watch",
+    "prettier": "prettier --write 'assets/js/*.tsx' 'functions/**/*.ts'",
     "start": "hugo && wrangler pages dev public/",
     "typecheck": "tsc -p assets/js/tsconfig.json"
   },

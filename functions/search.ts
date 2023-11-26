@@ -1,32 +1,4 @@
-module Elasticsearch {
-    export interface HitSources {
-        title: string;
-        summary: string;
-        permalink: string;
-        date: number;
-        lastmod: number;
-        truncated: boolean;
-    }
-
-    export interface SearchHits {
-        _source: HitSources;
-    }
-
-    export interface SearchTotalHits {
-        value: number;
-    }
-
-    export interface SearchMetadata {
-        total: SearchTotalHits;
-        hits: SearchHits[];
-    }
-
-    export interface SearchResult {
-        took: number;
-        timed_out: boolean;
-        hits: SearchMetadata;
-    }
-}
+import * as es from './estypes';
 
 function parseQuery(rawQuery: string): string {
     return rawQuery;
@@ -58,7 +30,7 @@ const search = async (elasticsearchUrl: string, rawQuery: string, page: number) 
             size: 10,
             _source: ['title', 'summary', 'permalink', 'date', 'lastmod', 'truncated'],
         }),
-    }).then((resp) => resp.json())) as Elasticsearch.SearchResult;
+    }).then((resp) => resp.json())) as es.SearchResult;
 
     const hits = result.hits.hits.map((hit) => {
         return {

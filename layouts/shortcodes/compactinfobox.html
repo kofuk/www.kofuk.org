@@ -1,0 +1,8 @@
+<div style="font-size: 0.9em; background-color: rgba(0, 50, 168, 0.1); margin: 20px 0; padding: 5px 20px; border-radius: px; border: solid #0032a8 1px">
+  {{ if .Get "title" }}
+  <div style="font-weight: bold; margin-left: -5px">
+    {{ .Get "title" }}
+  </div>
+  {{ end }}
+  {{ .Inner | markdownify }}
+</div>

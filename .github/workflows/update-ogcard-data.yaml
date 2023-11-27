@@ -1,0 +1,43 @@
+name: Update ogcard.yaml
+on: [push]
+
+jobs:
+  update-ogcard-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update ogcard.yaml
+        id: update
+        run: |
+          ./tools/update-ogdata.bash
+          updated=$(git diff --exit-code --quiet && echo 'false' || echo 'true')
+          echo "updated=${updated}"
+          echo "updated=${updated}" >>"${GITHUB_OUTPUT}"
+      - name: Open or update PR if updated
+        if: ${{ steps.update.outputs.updated == 'true' }}
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          git switch -c "ogcard/update-${BRANCH_NAME}"
+
+          cp data/ogcard.yaml ..
+
+          if git fetch origin "ogcard/update-${BRANCH_NAME}"; then
+              git reset --hard FETCH_HEAD
+          else
+              first=yes
+          fi
+
+          cp ../ogcard.yaml data/ogcard.yaml
+
+          git add -A
+          git commit -m 'Update ogcard.yaml for ${{ github.sha }}' || true
+          git push -u origin HEAD
+
+          if [ "${first}" = yes ]; then
+              gh pr create -t "Update ogcard.yaml for ${BRANCH_NAME} branch" -b '' -B "${BRANCH_NAME}"
+          fi

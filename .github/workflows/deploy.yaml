@@ -1,13 +1,15 @@
 name: deploy
-on: 'push'
+on:
+  push:
+    branches:
+      - master
 
 env:
-  HUGO_VERSION: '0.108.0'
+  HUGO_VERSION: '0.120.1'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3

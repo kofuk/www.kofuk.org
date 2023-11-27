@@ -6,6 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Download pup
+        run: |
+          curl -Lo pup.zip 'https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_amd64.zip'
+          unzip pup.zip
+          rm pup.zip
+          sudo mv pup /usr/bin
       - name: Update ogcard.yaml
         id: update
         run: |

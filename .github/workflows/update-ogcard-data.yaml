@@ -36,5 +36,5 @@ jobs:
           git push -u origin HEAD
 
           if [ "${first}" = yes ]; then
-              gh pr create -t "Update ogcard.yaml for ${BRANCH_NAME} branch" -B "${BRANCH_NAME}"
+              gh pr create -t "Update ogcard.yaml for ${BRANCH_NAME} branch" -b '' -B "${BRANCH_NAME}"
           fi

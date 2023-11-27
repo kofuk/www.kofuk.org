@@ -11,6 +11,7 @@ jobs:
         run: |
           ./tools/update-ogdata.bash
           updated=$(git diff --exit-code --quiet && echo 'false' || echo 'true')
+          echo "updated=${updated}"
           echo "updated=${updated}" >>"${GITHUB_OUTPUT}"
       - name: Open or update PR if updated
         if: ${{ steps.update.updated }}

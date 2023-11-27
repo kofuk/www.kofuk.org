@@ -14,10 +14,10 @@ jobs:
           echo "updated=${updated}"
           echo "updated=${updated}" >>"${GITHUB_OUTPUT}"
       - name: Open or update PR if updated
-        if: ${{ steps.update.updated }}
         env:
           BRANCH_NAME: ${{ github.ref_name }}
         run: |
+          echo ${{ steps.update.updated }}
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git switch -c "ogcard/update-${BRANCH_NAME}"

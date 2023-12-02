@@ -9,6 +9,7 @@
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
 	{{- if .Site.Params.opengraph }}
 		{{ template "_internal/opengraph.html" . }}
+		{{- partial "ogimage.html" . }}
 	{{- end }}
 	{{- if .Site.Params.schema }}
 		{{ template "_internal/schema.html" . }}

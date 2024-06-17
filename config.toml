@@ -57,12 +57,6 @@ enableEmoji = true
   rel = "me"
 
 [[Params.widgets.social.custom]]
-  title = "Mastodon（わくわく鮟鱇ランド）"
-  url = "https://don.kofuk.org/@kofuk"
-  icon = "svg/mastodon.svg"
-  rel = "me"
-
-[[Params.widgets.social.custom]]
   title = "View on GitHub"
   url = "https://github.com/kofuk/www.kofuk.org"
   icon = "svg/repo.svg"

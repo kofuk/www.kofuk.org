@@ -16,7 +16,7 @@
     "@cloudflare/workers-types": "^4.20240712.0",
     "@types/service-worker-mock": "^2.0.4",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.2",
+    "typescript": "^5.5.3",
     "typescript-language-server": "^4.3.3",
     "wrangler": "^3.64.0"
   }

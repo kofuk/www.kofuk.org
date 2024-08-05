@@ -13,7 +13,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240725.0",
+    "@cloudflare/workers-types": "^4.20240729.0",
     "@types/service-worker-mock": "^2.0.4",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",

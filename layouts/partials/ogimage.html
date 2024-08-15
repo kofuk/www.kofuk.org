@@ -3,32 +3,19 @@
   {{/* OG image is not present. We'll generate one. */}}
   {{- $font := resources.GetRemote "https://github.com/coz-m/MPLUS_FONTS/raw/master/fonts/ttf/Mplus2-SemiBold.ttf" }}
   {{- if .IsPage -}}
-    {{/* If there's one or images in the article, render the image */}}
-    {{- $overlay := images.Text "" }}
-    {{- with .Resources.GetMatch "*.{png,jpg}" }}
-      {{- $overlayImage := .Fit "500x500" | images.Filter (images.Opacity 0.8) }}
-      {{- $overlay = images.Overlay $overlayImage 690 230 }}
-    {{- end -}}
-
     {{/* Wrapping */}}
     {{- $maxLen := 18 }}
     {{- $len := strings.RuneCount .Title -}}
-    {{/* The first line */}}
-    {{- $titleText := slicestr .Title 0 (cond (lt $len $maxLen) $len $maxLen) -}}
-
-    {{/* Subsequent lines (if exists) */}}
-    {{- if gt $len $maxLen }}
-      {{- range $i := seq (div $len $maxLen) }}
-        {{- $end := (mul (add $i 1) $maxLen) }}
-        {{- $line := slicestr $.Title (mul $i $maxLen) (cond (lt $len $end) $len $end) }}
-        {{- $titleText = printf "%s\n%s" $titleText $line }}
-      {{- end -}}
-    {{- end }}
+    {{- $titleText := "" -}}
+    {{- range $i := seq 0 (div $len $maxLen) }}
+      {{- $line := substr $.Title (mul $i $maxLen) $maxLen }}
+      {{- $titleText = printf "%s%s\n" $titleText $line }}
+    {{- end -}}
 
     {{- $articleTitle := images.Text $titleText (dict "font" $font "color" "#333" "size" 60 "x" 50 "y" 100) }}
 
     {{- $siteTitle := images.Text site.Title (dict "font" $font "color" "#666" "size" 40 "x" 50 "y" 530) }}
-    {{- $image = (resources.Get "img/ogp.png" | images.Filter $overlay $articleTitle $siteTitle) }}
+    {{- $image = (resources.Get "img/ogp.png" | images.Filter $articleTitle $siteTitle) }}
   {{- else }}
     {{- $title := images.Text site.Title (dict "font" $font "color" "#333" "size" 100 "x" 140 "y" 220) }}
     {{- $image = (resources.Get "img/ogp.png" | images.Filter $title) }}

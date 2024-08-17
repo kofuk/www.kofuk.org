@@ -8,7 +8,6 @@ hasCJKLanguage = true
 summaryLength = 300
 disqusShortname = ""
 googleAnalytics = ""
-newContentEditor = "emacs"
 enableEmoji = true
 
 [Params]

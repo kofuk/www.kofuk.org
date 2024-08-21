@@ -1,5 +1,5 @@
 ---
-title: "Wiresharkでオレオレプロトコルをいい感じに解析する"
+title: "Wireshark でオレオレプロトコルをいい感じに解析する"
 date: 2024-08-20T00:00:00+09:00
 tags:
   - Development

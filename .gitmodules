@@ -1,0 +1,4 @@
+[submodule "themes/Mainroad"]
+	path = themes/Mainroad
+	url = https://github.com/kofuk/Mainroad.git
+	branch = custom

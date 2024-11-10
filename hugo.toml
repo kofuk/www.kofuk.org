@@ -2,13 +2,15 @@ baseurl = "https://www.kofuk.org/"
 title = "チラシの表の反対側"
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
-paginate = "10"
 theme = "Mainroad"
 hasCJKLanguage = true
 summaryLength = 300
 disqusShortname = ""
 googleAnalytics = ""
 enableEmoji = true
+
+[pagination]
+  pageSize = 10
 
 [Params]
   description = "主に技術的な情報を自分用のメモを兼ねて書いています。"
@@ -24,6 +26,7 @@ enableEmoji = true
   dateformat = "2006-01-02"
   mathjax = true
   fediverseAcct = "@kofuk@don.kofuk.org"
+  ogBaseImage = "img/ogp.png"
 #  customJS = ['js/search.js']
 
 [Params.style.vars]

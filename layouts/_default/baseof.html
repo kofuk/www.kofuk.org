@@ -19,6 +19,11 @@
 		<meta name="twitter:title" content="{{ .Title }}"/>
 		<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
 	{{- end }}
+	{{- if .IsPage }}
+		{{- with .Site.Params.fediverseAcct }}
+			<meta name="fediverse:creator" content="{{ . }}"/>
+		{{- end }}
+	{{- end }}
 
 	{{- $googleFontsLink := .Site.Params.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
 	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}

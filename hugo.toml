@@ -23,6 +23,7 @@ enableEmoji = true
   mainSections = "blog"
   dateformat = "2006-01-02"
   mathjax = true
+  fediverseAcct = "@kofuk@don.kofuk.org"
 #  customJS = ['js/search.js']
 
 [Params.style.vars]

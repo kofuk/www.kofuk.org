@@ -5,7 +5,7 @@ on:
       - master
 
 env:
-  HUGO_VERSION: '0.135.0'
+  HUGO_VERSION: '0.140.0'
 
 jobs:
   deploy:
@@ -20,13 +20,6 @@ jobs:
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
-      - name: Restore Cache
-        uses: actions/cache@v4
-        with:
-          path: /tmp/hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ env.HUGO_VERSION }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
       - name: Configure Build
         run: |
           mkdir -p layouts/_default

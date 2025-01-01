@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p layouts/_default
           cp etc/list.bonsai.json layouts/_default/.
-          cat etc/gen-bonsai-json.toml >>config.toml
+          cat etc/gen-bonsai-json.toml >>hugo.toml
       - name: Build
         run: hugo    # we don't like minification.
       - name: Update Elasticsearch Index

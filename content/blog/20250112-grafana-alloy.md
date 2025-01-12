@@ -21,7 +21,7 @@ Loki でログを収集できたり、便利機能がいろいろついていて
 謎ではあるんですが、これひとつデプロイすれば全てをやってくれるので楽ではありますね。
 
 Grafana Alloy は Helm でデプロイできるのでデプロイ自体はかなり楽です。
-Kustomize でやるならこんな感じですね。
+Kustomize でやるならこんな感じです。
 
 ```yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
@@ -60,16 +60,15 @@ Grafana Alloy の設定例は [Collect and forward data with Grafana Alloy | Gra
 OpenTelemetry に関しては、Grafana Cloud の Connections（`https://<なにか>.grafana.net/connections/add-new-connection/open-telemetry`）からパクってくるとひとまず動くものができるので、とりあえずやってみたい人にはおすすめです。
 ちなみに上のコード例だけでは exporter がいないのでいつまで待ってもデータが送信されません。気をつけてください。
 
-OpenTelemetry Collector として動かす場合に最低限必要なのは、`otelcol.receiver` で HTTP を有効にすることと、
+OpenTelemetry Collector として動かす場合に最低限必要なのは、`otelcol.receiver` で HTTP を有効にすること、
 それぞれに対応するポートを service に出してあげることです。（Mastodon は HTTP しか対応していないっぽいので、gRPC ではなく HTTP の方を有効化する必要があります。）
-そのために configMap と extraPorts を適当に設定します。前者は Grafana Alloy 自体の設定、校舎は service に設定して他の Pod から疎通できるようにするために必要です。
+そのために configMap と extraPorts を適当に設定します。前者は Grafana Alloy 自体の設定、後者は service に設定して他の Pod から疎通できるようにするために必要です。
 
 ## Mastodon のトレースを Grafana Cloud に送る
 
 Grafana Alloy 経由で送ります。
 
 Mastodon には数ヶ月前にリリースされた 4.3.0 から OpenTelemetry サポートが入っており、適切に環境変数を設定することでトレースを送信することができます。
-
 ConfigMap に書く場合はこんな感じです。
 
 ```yaml

@@ -2,7 +2,7 @@
 title: "Elasticsearchでサイト内検索できるようにしてみた"
 date: 2022-03-18T18:39:44+09:00
 tags:
-  - development
+  - tech
 ---
 
 ![](capture.png)

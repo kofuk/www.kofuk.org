@@ -3,7 +3,7 @@ title: "KASLRを無効化する"
 date: 2020-08-25T15:38:55+09:00
 
 tags:
-  - development
+  - tech
   - linux
 ---
 

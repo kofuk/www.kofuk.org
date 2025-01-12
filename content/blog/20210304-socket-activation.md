@@ -2,7 +2,7 @@
 title: "Socket Activation"
 date: 2021-03-04T23:14:46+09:00
 tags:
-  - development
+  - tech
   - systemd
 ---
 

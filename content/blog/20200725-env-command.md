@@ -2,7 +2,7 @@
 title: "envコマンド"
 date: 2020-07-25T23:26:46+09:00
 tags:
-  - development
+  - tech
   - GNU/Linux
 ---
 

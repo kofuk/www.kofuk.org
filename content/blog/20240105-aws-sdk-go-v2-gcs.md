@@ -2,7 +2,7 @@
 title: "aws-sdk-go-v2でGCSを叩いた際のSignatureDoesNotMatchに対処する"
 date: 2024-01-05T12:57:03+09:00
 tags:
-  - development
+  - tech
   - AWS
   - GCP
 ---

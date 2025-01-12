@@ -1,6 +1,8 @@
 ---
 title: "dm-crypt で暗号化している SSD で TRIM を有効にする"
 date: 2024-08-29T21:52:58+09:00
+tags:
+  - tech
 ---
 
 dm-crypt で暗号化している SSD ではデフォルトでは TRIM (a.k.a discard) が無効になっています。

@@ -4,7 +4,7 @@ date: 2020-01-30T22:16:47+09:00
 
 tags:
   - Android
-  - development
+  - tech
 ---
 
 最近，というかここ1年くらい Android アプリは全然作ってなくて，

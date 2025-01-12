@@ -2,7 +2,7 @@
 title: "WebKitGTK+でインスペクタを表示する方法"
 date: 2020-11-03T14:56:15+09:00
 tags:
-  - development
+  - tech
 ---
 
 調べたら普通にドキュメントが出るけどメモ。

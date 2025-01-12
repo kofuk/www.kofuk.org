@@ -3,6 +3,7 @@ title: "ls --hyperlink の Feature Request を見つけた"
 date: 2020-02-25T22:50:31+09:00
 
 tags:
+  - tech
   - GNU/Linux
   - shell
 ---

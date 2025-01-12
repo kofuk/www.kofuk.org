@@ -3,6 +3,7 @@ title: "Emacs の glasses-mode"
 date: 2020-02-25T00:09:24+09:00
 
 tags:
+  - tech
   - Emacs
 ---
 

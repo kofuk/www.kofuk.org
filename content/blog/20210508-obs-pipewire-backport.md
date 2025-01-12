@@ -2,7 +2,7 @@
 title: "OBS StudioのPipeWireキャプチャが古いリリースでも動くようにしてみた"
 date: 2021-05-08T16:35:02+09:00
 tags:
-  - development
+  - tech
 ---
 
 今リリースされているバージョンの OBS Studio では Wayland 上で画面キャプチャができない。

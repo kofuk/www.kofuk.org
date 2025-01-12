@@ -2,7 +2,7 @@
 title: "CMakeのedit_cacheが使えるという話"
 date: 2021-02-28T16:39:33+09:00
 tags:
-  - development
+  - tech
   - CMake
 ---
 

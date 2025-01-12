@@ -4,7 +4,7 @@ date: 2021-08-03T19:26:41+09:00
 lastmod: 2021-08-04T08:05:30+09:00
 tags:
   - GNOME
-  - development
+  - tech
 ---
 
 ![導入後](sixel.png)

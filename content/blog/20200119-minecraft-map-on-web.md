@@ -3,7 +3,7 @@ title: "Minecraft のマップを表示するサイト作ってみた"
 date: 2020-01-19T00:51:48+09:00
 
 tags:
-  - development
+  - tech
   - Minecraft
 ---
 

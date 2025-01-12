@@ -3,7 +3,7 @@ title: "Python の並列処理とか"
 date: 2020-01-28T21:01:50+09:00
 
 tags:
-  - development
+  - tech
   - Python
 ---
 

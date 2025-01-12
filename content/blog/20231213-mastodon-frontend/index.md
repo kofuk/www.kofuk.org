@@ -3,7 +3,7 @@ title: "Mastodonのフロントエンドをカスタマイズしてみよう"
 date: 2023-12-13T00:00:00+09:00
 lastmod: 2023-12-16T11:14:13+09:00
 tags:
-  - development
+  - tech
   - Mastodon
 ---
 

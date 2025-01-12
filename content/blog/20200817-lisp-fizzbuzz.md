@@ -3,7 +3,7 @@ title: "LISPでFizzBuzz"
 date: 2020-08-17T23:10:34+09:00
 
 tags:
-  - development
+  - tech
   - LISP
 ---
 

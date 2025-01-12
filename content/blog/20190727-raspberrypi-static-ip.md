@@ -2,6 +2,7 @@
 title: "Raspberry Pi 2 で静的 IP を設定する"
 date: 2019-07-27T11:00:00+09:00
 tags:
+  - tech
   - GNU/Linux
   - RaspberryPi
 ---

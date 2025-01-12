@@ -3,8 +3,8 @@ title: "QEMUで雑に作るArch Linux ARMビルド環境"
 date: 2022-04-04T20:36:34+09:00
 lastmod: 2022-04-05T21:36:47+09:00
 tags:
-  - development
-  - ArchLinux
+  - tech
+  - Arch Linux
 ---
 
 QEMU で起動するのが楽な Alpine Linux で aarch64 な Linux 環境を作り、

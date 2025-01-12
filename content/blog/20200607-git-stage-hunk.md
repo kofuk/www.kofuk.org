@@ -3,7 +3,7 @@ title: "Gitで一部の変更だけをコミットする"
 date: 2020-06-07T11:38:23+09:00
 lastmod: 2020-12-15T22:00:02+09:00
 tags:
-  - development
+  - tech
   - Git
 ---
 

@@ -3,7 +3,7 @@ title: "Ubuntu で freeglut を使う"
 date: 2019-08-23T10:00:00+09:00
 
 tags:
-  - development
+  - tech
   - GNU/Linux
   - Ubuntu
   - C

@@ -2,7 +2,7 @@
 title: "CMake on Windows (ライブラリの解決関係)"
 date: 2021-02-19T18:07:32+09:00
 tags:
-  - development
+  - tech
   - cmake
 ---
 

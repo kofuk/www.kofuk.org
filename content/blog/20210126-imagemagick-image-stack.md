@@ -3,6 +3,7 @@ title: "ImageMagick の image stack operator"
 date: 2021-01-26T10:47:58+09:00
 
 tags:
+  - tech
   - shell
   - imagemagick
 ---

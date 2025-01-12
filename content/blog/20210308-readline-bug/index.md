@@ -3,7 +3,7 @@ title: "readlineのバグだった"
 date: 2021-03-08T00:01:01+09:00
 lastmod: 2021-03-09T23:01:13+09:00
 tags:
-  - development
+  - tech
   - bash
   - readline
 ---

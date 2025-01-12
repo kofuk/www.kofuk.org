@@ -2,6 +2,7 @@
 title: "LinuxのLVMに入門したのでいろいろメモ"
 date: 2023-01-31T20:52:00+09:00
 tags:
+  - tech
   - Linux
 ---
 

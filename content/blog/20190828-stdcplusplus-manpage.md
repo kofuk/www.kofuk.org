@@ -4,7 +4,7 @@ date: 2019-08-28T10:00:00+09:00
 
 tags:
   - C++
-  - development
+  - tech
   - Ubuntu
 ---
 

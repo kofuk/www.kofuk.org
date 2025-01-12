@@ -3,6 +3,7 @@ title: "GNOME Shell 3.36 で IBus が使えない対処"
 date: 2020-04-30T00:50:12+09:00
 
 tags:
+  - tech
   - GNU/Linux
 ---
 

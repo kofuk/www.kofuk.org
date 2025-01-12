@@ -3,7 +3,7 @@ title: "ハイパーリンクのエスケープシーケンス"
 date: 2020-02-24T23:29:21+09:00
 
 tags:
-  - development
+  - tech
   - shell
 ---
 

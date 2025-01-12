@@ -4,6 +4,7 @@ date: 2019-08-25T10:00:00+09:00
 lastmod: 2020-08-11T00:30:43+09:00
 
 tags:
+  - tech
   - GNU/Linux
   - Ubuntu
 ---

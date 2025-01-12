@@ -3,7 +3,7 @@ title: "ブログをまた動かした"
 date: 2020-01-17T11:19:05+09:00
 
 tags:
-  - development
+  - tech
 ---
 
 なんか，前は Emacs Lisp で動く CMS でブログを動かしていたのだけど，なにしろ

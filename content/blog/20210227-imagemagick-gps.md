@@ -2,6 +2,7 @@
 title: "ImageMagickでExif情報からGPS情報を取る"
 date: 2021-02-27T23:02:36+09:00
 tags:
+  - tech
   - ImageMagick
 ---
 

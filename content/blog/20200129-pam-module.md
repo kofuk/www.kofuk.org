@@ -4,7 +4,7 @@ date: 2020-01-29T21:59:17+09:00
 
 tags:
   - C
-  - development
+  - tech
   - GNU/Linux
 ---
 

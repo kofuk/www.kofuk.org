@@ -2,6 +2,7 @@
 title: "Firefoxでマイク使用中のポップアップを表示しない方法"
 date: 2021-05-30T16:14:53+09:00
 tags:
+  - tech
   - Firefox
 ---
 

@@ -3,6 +3,7 @@ title: "Linux 環境で適当にサンドボックスする"
 date: 2020-05-18T22:54:37+09:00
 
 tags:
+  - tech
   - GNU/Linux
 ---
 

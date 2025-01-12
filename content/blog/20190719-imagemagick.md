@@ -3,6 +3,7 @@ title: "ImageMagick の処理を高速化する"
 date: 2019-07-19T10:00:00+09:00
 
 tags:
+  - tech
   - shell
   - imagemagick
 ---

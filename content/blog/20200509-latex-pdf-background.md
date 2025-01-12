@@ -3,6 +3,7 @@ title: "PDFやWordファイルのテンプレートでもLaTeXでなんとかす
 date: 2020-05-09T15:59:32+09:00
 
 tags:
+  - tech
   - LaTeX
 ---
 

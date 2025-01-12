@@ -3,7 +3,8 @@ title: "Linux on ThinkPadのバッテリー設定をいい感じにする"
 date: 2020-09-07T02:42:57+09:00
 
 tags:
-  - linux
+  - tech
+  - Linux
 ---
 
 僕は ThinkPad X1 Carbon の 2019 年モデルを使っていて，少なくとも僕が学生の間は買い換えないつもりでいる。

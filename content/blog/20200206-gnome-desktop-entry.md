@@ -3,7 +3,7 @@ title: "GNOME のデスクトップエントリー"
 date: 2020-02-06T10:44:24+09:00
 
 tags:
-  - development
+  - tech
   - GNOME
 ---
 

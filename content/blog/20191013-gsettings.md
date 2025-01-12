@@ -3,6 +3,7 @@ title: "gsettings で変更したい設定メモ"
 date: 2019-10-13T10:00:00+09:00
 
 tags:
+  - tech
   - GNU/Linux
   - GNOME
 ---

@@ -2,6 +2,7 @@
 title: "PHPerKaigi 2024に参加しました！（オンラインで）"
 date: 2024-03-09T12:31:57+09:00
 tags:
+  - tech
   - PHP
 ---
 

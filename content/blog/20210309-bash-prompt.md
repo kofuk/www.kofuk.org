@@ -2,7 +2,7 @@
 title: "プロンプトが壊れる件について"
 date: 2021-03-09T22:39:54+09:00
 tags:
-  - development
+  - tech
   - readline
   - bash
 ---

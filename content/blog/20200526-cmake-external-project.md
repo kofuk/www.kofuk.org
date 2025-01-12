@@ -3,7 +3,7 @@ title: "CMakeのExternalProject"
 date: 2020-05-26T18:34:10+09:00
 
 tags:
-  - development
+  - tech
   - CMake
 ---
 

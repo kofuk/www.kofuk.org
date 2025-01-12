@@ -2,7 +2,7 @@
 title: "Hugo で OGP 画像を生成する"
 date: 2024-08-15T22:17:57+09:00
 tags:
-  - Development
+  - tech
   - Hugo
 ---
 

@@ -2,8 +2,9 @@
 title: "Arch LinuxでWindowsの起動USBを作る方法"
 date: 2021-04-06T00:03:07+09:00
 tags:
+  - tech
   - Windows
-  - ArchLinux
+  - Arch Linux
 ---
 
 Windows のイメージは Microsoft のサイトからダウンロードできるが、

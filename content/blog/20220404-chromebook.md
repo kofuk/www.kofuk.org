@@ -3,7 +3,7 @@ title: "Chromebook を購入し (て Crostini に Arch Linux を入れ) た話"
 date: 2022-04-04T01:18:58+09:00
 tags:
   - ChromeOS
-  - ArchLinux
+  - Arch Linux
 ---
 
 使ってた iPad のボタンの調子が悪かったので移行先を探していたのですが、

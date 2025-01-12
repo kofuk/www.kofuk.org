@@ -2,6 +2,7 @@
 title: "Emacs標準のスプレッドシートses-modeの使い方メモ"
 date: 2022-04-17T19:32:26+09:00
 tags:
+  - tech
   - Emacs
 ---
 

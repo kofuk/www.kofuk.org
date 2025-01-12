@@ -3,6 +3,7 @@ title: "Firefox on Wayland"
 date: 2020-06-01T16:19:55+09:00
 
 tags:
+  - tech
   - Firefox
   - GNU/Linux
 ---

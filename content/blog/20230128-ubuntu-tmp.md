@@ -2,6 +2,7 @@
 title: "Ubuntuの/tmpをtmpfsにする方法"
 date: 2023-01-28T22:49:51+09:00
 tags:
+  - tech
   - Ubuntu
   - systemd
   - GNU/Linux

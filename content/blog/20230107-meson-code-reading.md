@@ -2,7 +2,7 @@
 title: "Mesonのコードを読む (1)"
 date: 2023-01-07T21:13:07+09:00
 tags:
-  - development
+  - tech
   - code reading
   - Meson
 ---

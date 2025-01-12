@@ -3,6 +3,7 @@ title: "LaTeXでカルノーマップを描画する"
 date: 2020-04-25T11:30:29+09:00
 
 tags:
+  - tech
   - LaTeX
 ---
 

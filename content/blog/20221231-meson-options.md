@@ -2,7 +2,7 @@
 title: "Meson で subproject のオプションを指定する方法"
 date: 2022-12-31T01:20:54+09:00
 tags:
-  - development
+  - tech
   - Meson
 ---
 

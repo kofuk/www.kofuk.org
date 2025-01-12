@@ -3,7 +3,7 @@ title: "カジュアルにブラウザ拡張を作ってWebサイトを快適に
 date: 2020-12-15T12:14:54+09:00
 
 tags:
-  - development
+  - tech
 ---
 
 {{< colorbox >}}

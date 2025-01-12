@@ -3,6 +3,7 @@ title: "Arch Linuxを暗号化したディスクにインストールする"
 date: 2023-02-04T15:45:38+09:00
 lastmod: 2023-02-05T14:40:52+09:00
 tags:
+  - tech
   - Linux
   - Arch Linux
 ---

@@ -2,6 +2,7 @@
 title: "Emacsのページについて"
 date: 2022-08-09T11:15:19+09:00
 tags:
+  - tech
   - Emacs
 ---
 

@@ -3,7 +3,7 @@ title: "Qtに入門する"
 date: 2020-08-10T22:26:28+09:00
 
 tags:
-  - development
+  - tech
   - Qt
 ---
 

@@ -2,7 +2,7 @@
 title: "Emacs内のターミナルでのEmacsの実行をいい感じにした"
 date: 2021-11-30T22:27:16+09:00
 tags:
-  - development
+  - tech
   - Emacs
 ---
 

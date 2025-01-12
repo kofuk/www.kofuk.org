@@ -1,6 +1,8 @@
 ---
 title: "Daidoquer2（Discord読み上げボット）を使った記録"
 date: 2023-05-04T20:10:48+09:00
+tags:
+  - tech
 ---
 
 [Daidoquer2](https://github.com/ushitora-anqou/daidoquer2) (ddq2) という艮鮟鱇さんが作った読み上げボットをローカルのマシンで立ち上げ、

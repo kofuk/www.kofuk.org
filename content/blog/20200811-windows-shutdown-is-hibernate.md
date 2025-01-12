@@ -3,6 +3,7 @@ title: "Windowsはシャットダウンと言いながらハイバネートし�
 date: 2020-08-11T00:09:54+09:00
 
 tags:
+  - tech
   - Windows
 ---
 

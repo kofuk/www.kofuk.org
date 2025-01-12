@@ -3,7 +3,7 @@ title: "Unicodeの正規化と濁点"
 date: 2019-08-22T10:00:00+09:00
 
 tags:
-  - development
+  - tech
   - shell
 ---
 

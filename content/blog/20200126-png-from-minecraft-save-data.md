@@ -3,7 +3,7 @@ title: "Minecraft のセーブデータから地図を生成するやつを作�
 date: 2020-01-26T17:23:55+09:00
 
 tags:
-  - development
+  - tech
   - Minecraft
   - Python
 ---

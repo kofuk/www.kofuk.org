@@ -2,6 +2,7 @@
 title: "Arch Linuxでext4のrootfsをLUKSで暗号化する"
 date: 2023-02-04T20:25:16+09:00
 tags:
+  - tech
   - Linux
   - Arch Linux
 ---

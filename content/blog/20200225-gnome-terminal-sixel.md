@@ -4,6 +4,7 @@ date: 2020-02-25T22:55:25+09:00
 lastmod: 2021-08-10T08:44:18+09:00
 
 tags:
+  - tech
   - GNOME
   - shell
 ---

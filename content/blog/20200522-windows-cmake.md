@@ -3,7 +3,7 @@ title: "WindowsでCMakeのプロジェクトをビルドする"
 date: 2020-05-22T12:54:04+09:00
 
 tags:
-  - development
+  - tech
   - Windows
 ---
 

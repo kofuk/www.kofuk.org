@@ -4,7 +4,7 @@ date: 2020-07-07T17:11:06+09:00
 
 tags:
   - shell
-  - development
+  - tech
 ---
 
 ちょっと前に `.bashrc` に追加したやつの紹介。

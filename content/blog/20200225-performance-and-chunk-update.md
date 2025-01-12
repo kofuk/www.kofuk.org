@@ -4,7 +4,7 @@ date: 2020-02-25T22:42:51+09:00
 
 tags:
   - C++
-  - development
+  - tech
   - Minecraft
 ---
 

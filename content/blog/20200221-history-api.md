@@ -3,7 +3,7 @@ title: "JavaScript History API"
 date: 2020-02-21T22:46:44+09:00
 
 tags:
-  - development
+  - tech
 ---
 
 久しぶりに触った。例によってマップの実装に使った訳だが。

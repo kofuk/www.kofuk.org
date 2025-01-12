@@ -2,7 +2,7 @@
 title: "DBusのEmacs Lispバインディング"
 date: 2020-11-25T13:41:19+09:00
 tags:
-  - development
+  - tech
   - GNU/Linux
   - DBus
 ---

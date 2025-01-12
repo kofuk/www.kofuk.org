@@ -2,7 +2,7 @@
 title: "mallocをフックしてメモリ使用量を測る"
 date: 2022-09-16T13:24:59+09:00
 tags:
-  - development
+  - tech
   - C
 ---
 

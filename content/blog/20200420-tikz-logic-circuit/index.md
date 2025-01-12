@@ -3,6 +3,7 @@ title: "TikZで論理回路を描く"
 date: 2020-04-20T17:45:22+09:00
 
 tags:
+  - tech
   - LaTeX
 ---
 

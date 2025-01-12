@@ -3,7 +3,7 @@ title: "Emacsをビルドするときにconfigureがうまくいかない場合�
 date: 2019-07-31T10:00:00+09:00
 
 tags:
-  - development
+  - tech
   - Emacs
 ---
 

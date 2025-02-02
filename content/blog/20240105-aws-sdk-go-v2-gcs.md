@@ -25,7 +25,7 @@ GCS の場合も S3 互換の API を叩いた場合はこれを検証してい�
 
 リクエスト
 
-```plaintext
+```http
 GET /XXXXXXXX?list-type=2 HTTP/1.1
 Host: storage.googleapis.com
 User-Agent: aws-sdk-go-v2/1.24.0 os/linux lang/go#1.21.5 md/GOOS#linux md/GOARCH#amd64 api/s3#1.47.7
@@ -39,7 +39,7 @@ X-Amz-Date: 20240104T105425Z
 
 レスポンス
 
-```plaintext
+```http
 HTTP/2.0 403 Forbidden
 Content-Length: 877
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000

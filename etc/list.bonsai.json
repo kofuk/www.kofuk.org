@@ -3,7 +3,29 @@
 {{- range .Site.RegularPages -}}
 {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
     {{/* action / metadata */}}
-    {{ (dict "index" (dict "_index" "hugo" "_type" "doc"  "_id" .File.UniqueID)) | jsonify }}
-    {{ (dict "objectID" .File.UniqueID "date" .Date.UTC.Unix "kind" .Kind "lastmod" .Lastmod.UTC.Unix "permalink" .RelPermalink "content" .Plain "title" .Title "tags" .Params.Tags "categories" .Params.Categories "summary" .Summary "truncated" .Truncated) | jsonify }}
+    {{
+        (dict
+            "index" (dict
+                        "_index" "hugo"
+                        "_type" "doc"
+                        "_id" .File.UniqueID
+                    )
+        ) | jsonify
+    }}
+    {{
+        (dict
+            "objectID" .File.UniqueID
+            "date" .Date.UTC.Unix
+            "kind" .Kind
+            "lastmod" .Lastmod.UTC.Unix
+            "permalink" .RelPermalink
+            "content" .Plain
+            "title" .Title
+            "tags" .Params.Tags
+            "categories" .Params.Categories
+            "summary" .Summary
+            "truncated" .Truncated
+        ) | jsonify
+    }}
   {{- end -}}
 {{- end }}

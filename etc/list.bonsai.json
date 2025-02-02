@@ -23,7 +23,7 @@
             "title" .Title
             "tags" .Params.Tags
             "categories" .Params.Categories
-            "summary" .Summary
+            "summary" (.Summary | plainify)
             "truncated" .Truncated
         ) | jsonify
     }}

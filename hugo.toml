@@ -5,8 +5,6 @@ defaultContentLanguage = "ja"
 theme = "Mainroad"
 hasCJKLanguage = true
 summaryLength = 300
-disqusShortname = ""
-googleAnalytics = ""
 enableEmoji = true
 
 [pagination]
@@ -27,7 +25,6 @@ enableEmoji = true
   mathjax = true
   fediverseAcct = "@kofuk@don.kofuk.org"
   ogBaseImage = "img/ogp.png"
-#  customJS = ['js/search.js']
 
 [Params.style.vars]
   highlightColor = "#0032a8"
@@ -36,22 +33,16 @@ enableEmoji = true
   home = "right"
   list = "right"
   single = "right"
-  widgets = ["site_search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["site_search", "recent", "categories", "taglist", "social"]
 
 [Params.widgets]
   recent_num = 5
   tags_counter = true
 
 [Params.widgets.social]
-  facebook = ""
   twitter = "man_2_fork"
-  instagram = ""
-  linkedin = ""
-  telegram = ""
   github = "kofuk"
-  gitlab = "KoFuk"
-  bitbucket = ""
-  email = "ko.fu.dev+blog {a} gmail.com"
+  gitlab = "kofuk"
 
 [[Params.widgets.social.custom]]
   title = "Mastodon"

@@ -17,14 +17,14 @@ Unicode において，濁音の表現方法は2つあります．一つが濁�
 
 以下が 2番目の表現方法から 1 番目の表現方法に変換する例です．
 
-```shell
+```console
 $ echo -n が | uconv -x NFD
 が
 ```
 
 分解されたものを再度合わせるのは以下です．
 
-```shell
+```console
 $ echo -n が |n uconv -x NFC
 が
 ```
@@ -34,21 +34,21 @@ $ echo -n が |n uconv -x NFC
 
 まず，キーボードで入力した「が」です．
 
-```shell
+```console
 $  echo -n が | xxd -g1
 00000000: e3 81 8c                                         ...
 ```
 
 で，前者の方法
 
-```shell
+```console
 $ echo -n $(echo -n が | uconv -x NFD) | uconv -x NFC | xxd -g1
 00000000: e3 81 8c                                         ...
 ```
 
 後者の方法
 
-```shell
+```console
 $  echo -n が | uconv -x NFD | xxd -g1
 00000000: e3 81 8b e3 82 99                                ......
 ```
@@ -57,7 +57,7 @@ $  echo -n が | uconv -x NFD | xxd -g1
 
 ここで，「か」の16進ダンプを見てみます．
 
-```shell
+```console
 $ echo か | xxd -g1
 00000000: e3 81 8b                                         ...
 ```
@@ -66,7 +66,7 @@ $ echo か | xxd -g1
 
 これを使って「ま」に濁点を付けてみたいと思います．
 
-```shell
+```console
 $ echo $(echo -n ま | xxd -p)e38299 | xxd -p -r
 ま゙
 ```

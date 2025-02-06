@@ -8,7 +8,7 @@ tags:
 
 Exif 情報を表示するには:
 
-```shell
+```console
 $ identify -verbose image.jpg
 ```
 

@@ -30,7 +30,7 @@ tags:
 
 これを知ったきっかけというのは，
 
-```shell
+```console
 $ coredumpctl --help
 ```
 
@@ -63,13 +63,13 @@ URL のところにいれるといいみたい。
 
 これは超大事な話なので追記しますが，
 
-```shell
+```console
 $ ls -kokifukuda
 ```
 
 はちゃんと動きます。（`ls` の流れで誰かに話したい欲を発散する）
 
-```shell
+```console
 $ ls -kokifukuda
 12845058 .
 ```

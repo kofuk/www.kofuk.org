@@ -15,7 +15,7 @@ Python の http.server モジュールとかでも静的なファイルを見せ
 
 デフォルトだとデーモンになってしまってウザい (は？)。
 
-```shell
+```console
 $ lighttpd -D -f path-to-conf.conf
 ```
 
@@ -74,7 +74,7 @@ auth.require = ( "/" =>
 で、認証情報のファイルつごうする。`htdigest` コマンドがあるならそれで生成してもいいが、
 ないものをわざわざインストールするのは面倒なのでワンライナーで適当にでっちあげる。
 
-```shell
+```console
 $ echo "<user>:WebDAV:$(echo -n '<user>:WebDAV:<password>' | md5sum | cut -d' ' -f1)" >>users
 ```
 

@@ -98,7 +98,7 @@ https://community.cloudflare.com/t/setup-workers-on-personal-domain/88012/5
 ローカル環境で Cloudflare Workers をシミュレートする miniflare というのがあります。Workers Sites の場合、
 static なファイルが `./public` にあるとすると
 
-```shell
+```console
 $ npx miniflare --site ./public
 ```
 

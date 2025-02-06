@@ -13,7 +13,7 @@ systemd のデフォルトでは /tmp は tmpfs でマウントされるよう�
 
 まあどうでもいいといえばどうでもいいが、Ubuntu の /tmp を tmpfs にする方法。
 
-```shell
+```console
 $ sudo systemctl enable /usr/share/systemd/tmp.mount
 $ sudo reboot
 ```

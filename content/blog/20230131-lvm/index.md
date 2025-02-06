@@ -35,20 +35,20 @@ VG ではあんまり凝ったことをせずに LV の機能の恩恵だけ受�
 
 PV を作る
 
-```shell
+```console
 $ sudo pvcreate /dev/sda1 /dev/sda2
 ```
 
 パーティションを切らずに使う場合、ボリュームラベルがあると `device is partitioned` みたいなことを言われて
 PV を作ることができない。その場合は `wipefs` コマンドで消す（これが正しいのかは知らん）。
 
-```shell
+```console
 $ sudo wipefs --all /dev/sda
 ```
 
 VG を作る。
 
-```shell
+```console
 $ sudo vgcreate myvg /dev/sda1 /dev/sda2
 ```
 
@@ -56,7 +56,7 @@ $ sudo vgcreate myvg /dev/sda1 /dev/sda2
 
 LV を作る。
 
-```shell
+```console
 $ sudo lvcreate -L 1GiB myvg -n mylv
 ```
 
@@ -67,7 +67,7 @@ $ sudo lvcreate -L 1GiB myvg -n mylv
 
 例えば ext4 ファイルシステムを作る場合はこういう。
 
-```shell
+```console
 $ sudo mkfs.ext4 /dev/mapper/myvg-mylv
 ```
 
@@ -75,13 +75,13 @@ $ sudo mkfs.ext4 /dev/mapper/myvg-mylv
 
 抜く前に VG を無効化すればいい
 
-```shell
+```console
 $ sudo vgchange -an myvg-mylv
 ```
 
 挿入したときは自動的に有効化してくれる。無効化した VG を手動で有効化するには
 
-```shell
+```console
 $ sudo vgchange -ay myvg-mylv
 ```
 
@@ -106,7 +106,7 @@ yes/no なのちょっと面白いよね。
 適当にぶっ壊してみたところ、LVM の管理領域を壊してしまったのでその PV は認識されなくなってしまった。
 一応一部の PV しかなくてもマウントは可能
 
-```shell
+```console
 $ sudo vgchange -ay --activationmode partial myvg
 ```
 
@@ -119,13 +119,13 @@ $ sudo vgchange -ay --activationmode partial myvg
 CoW らしいがあんまり試してないので本当に CoW なのかは分かってない。
 残りの容量がわずかでもスナップショットは取れるのでまあそうなんだろうなーという感じはするけど。
 
-```shell
+```console
 $ sudo lvcreate -s -l 100%ORIGIN myvg/mylv -n ss
 ```
 
 これで何やら怪しげなデバイスが生えてくる。
 
-```shell
+```console
 $ ls /dev/mapper 
 /dev/mapper/control    /dev/mapper/myvg-mylv-real  /dev/mapper/myvg-ss-cow
 /dev/mapper/myvg-mylv  /dev/mapper/myvg-ss
@@ -135,7 +135,7 @@ $ ls /dev/mapper
 
 で、スナップショットに戻す。この操作自体はマウントしていてもできるが、マウント中に戻した場合は一旦 LV を無効化しないと反映されないので注意。
 
-```shell
+```console
 $ sudo lvconvert --merge myvg/ss
 ```
 

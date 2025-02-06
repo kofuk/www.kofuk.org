@@ -61,7 +61,7 @@ ImageMagick のコマンドラインオプションはスタックに画像を�
 
 適当な画像から `favicon.ico` をこさえる。
 
-```shell
+```console
 $ convert in.png +clone -resize 128x128 -clone 0 -resize 64x64 -clone 0 -resize 32x32 -delete 0 favicon.ico
 ```
 

@@ -87,7 +87,7 @@ Vagrant と VirtualBox が入っていることを前提に進めます。
 
 とりあえず Mastodon のコードがないと始まらないので、取ってきます。
 
-```shell
+```console
 $ git clone https://github.com/mastodon/mastodon.git -b v4.2.3
 ```
 
@@ -98,19 +98,19 @@ clone したリポジトリの中身を見ると、`Vagrantfile` があります
 
 hosts の設定を自動でやってくれる、vagrant-hostupdater を入れます。（これは任意ですが、自分は使いました）
 
-```shell
+```console
 $ vagrant plugin install vagrant-hostsupdater
 ```
 
 ここまでできたら、VM を立ち上げましょう。VM で環境構築が走るので少し時間がかかります。
 
-```shell
+```console
 $ vagrant up
 ```
 
 無事成功したら、あとは VM の中で Mastodon のプロセスを立ち上げます。
 
-```shell
+```console
 $ vagrant ssh -c "cd /vagrant && foreman start"
 ```
 

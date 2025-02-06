@@ -18,8 +18,8 @@ Emscripten でコンパイルすると、`main` から到達できないコー�
 
 コンパイルは
 
-```shell
-emcc -s WASM=1 -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS="['ccall']" -o index.html main.cc
+```console
+$ emcc -s WASM=1 -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS="['ccall']" -o index.html main.cc
 ```
 
 とかで。`NO_EXIT_RUNTIME` にしておくことで、 `main` を実行したあとランタイムを止めるというデフォルトの挙動を変更できる。

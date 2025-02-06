@@ -13,7 +13,7 @@ tags:
 
 # 必要なパッケージを入れる
 
-```shell
+```console
 $ sudo apt install freeglut3-dev
 ```
 
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 
 で，コンパイル
 
-```shell
+```console
 $ gcc main.c -lglut -lGLU -lGL -lm
 ```
 
@@ -71,7 +71,7 @@ all: main.o
 
 # Man よこせ
 
-```shell
+```console
 $ sudo apt install opengl-4-man-doc
 ```
 

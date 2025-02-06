@@ -13,7 +13,7 @@ tags:
 
 一番簡単。だいたいこれでやってる気がする。
 
-```shell
+```console
 $ git add -A
 ```
 
@@ -21,13 +21,13 @@ $ git add -A
 
 普通。
 
-```shell
+```console
 $ git add foo.c bar.c baz.c
 ```
 
 ## 一部の hunk だけコミットする
 
-```shell
+```console
 $ git add -p
 ```
 
@@ -37,7 +37,7 @@ $ git add -p
 
 変更がくっついていると違う内容の変更が 1 個の hunk に入ってしまったりする。
 
-```shell
+```console
 $ git add -p
 ```
 

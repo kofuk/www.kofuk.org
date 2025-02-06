@@ -27,7 +27,7 @@ Arch Linux 上で確認をしています。
 1. まだリリースされていないので HEAD を取ってくる必要があります。
 なんかサーバ遅い気がするので `--depth 1` をつけて履歴を取ってこないようにした方がいいかもしれません。
 
-```shell
+```console
 $ git clone https://gitlab.gnome.org/GNOME/vte.git
 ```
 
@@ -35,7 +35,7 @@ $ git clone https://gitlab.gnome.org/GNOME/vte.git
     sixel はデフォルトだと無効なのでここで有効化してやります
     (`-D` は Make とか CMake にあるような、ビルドのオプションを変えるというオプション)。
 
-```shell
+```console
 $ meson . _build -Dsixel=true && cd _build && ninja
 ```
 
@@ -48,7 +48,7 @@ $ meson . _build -Dsixel=true && cd _build && ninja
 4. gnome-terminal-server を殺します (どうやらこのサーバから他の端末の窓が生えてるっぽいので)。
     全部の GNOME 端末が閉じるので注意。
 
-```shell
+```console
 $ killall gnome-terminal-server
 ```
 

@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 
 コンパイルは：
 
-```shell
+```console
 $ g++ -fPIC $(pkg-config --cflags --libs Qt5Widgets) foo.cc
 ```
 

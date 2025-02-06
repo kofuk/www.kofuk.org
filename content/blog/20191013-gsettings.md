@@ -14,7 +14,7 @@ Unity の頃の Ubuntu に慣れすぎて Windows なレイアウトに慣れな
 
 ※ 決して Windows が嫌いだからとかそういう理由ではない.
 
-```shell
+```console
 $ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:appmenu'
 ```
 
@@ -22,7 +22,7 @@ $ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,m
 
 鬱陶しいので. あとついでに Caps の位置に Ctrl があるのに慣れといた方がいいかな, と.
 
-```shell
+```console
 $ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 ```
 

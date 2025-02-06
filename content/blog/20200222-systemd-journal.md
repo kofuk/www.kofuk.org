@@ -13,7 +13,7 @@ systemd がすごい syslogd をやってるらしい。systemd 肥大化しす�
 
 で，そのログを見るには，
 
-```shell
+```console
 $ journalctl
 ```
 
@@ -23,7 +23,7 @@ $ journalctl
 僕の場合は 12 月のログとかが最初に出てきてうーん，となった。
 たいていの場合はログは新しい方から見たいんではないかと思うので，そういう場合は，
 
-```shell
+```console
 $ journalctl --reverse
 ```
 
@@ -31,7 +31,7 @@ $ journalctl --reverse
 
 あと `--grep` オプションとかもあって，
 
-```shell
+```console
 $ cat /var/log/syslog | grep foobar
 ```
 

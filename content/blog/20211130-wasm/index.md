@@ -29,7 +29,7 @@ https://github.com/kofuk/haystack/blob/df5d58caadf1ca640fef80484ac138faa6090c14/
 
 そして、`emscripten` で適当にコンパイルします。このとき、適当にフラグをセットしたりしないといけないらしい。
 
-```shell
+```console
 $ /usr/lib/emscripten/emcc smf.cc -s WASM=1 -o hello.html
 ```
 

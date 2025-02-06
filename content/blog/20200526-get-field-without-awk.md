@@ -14,7 +14,7 @@ tags:
 
 で結論から言うとっていうか結論を言ったらこの投稿は終了なんだけど，以下のようにする。
 
-```shell
+```console
 $ your-command | tr -s ' ' | cut -d ' ' -f2
 ```
 
@@ -23,6 +23,6 @@ $ your-command | tr -s ' ' | cut -d ' ' -f2
 
 あとオプションと引数をつなげると文字数減らせるハックなど（無駄）
 
-```shell
+```console
 $ your-command|tr -s \ |cut -d\  -f2
 ```

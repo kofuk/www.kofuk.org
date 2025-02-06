@@ -24,7 +24,7 @@ bazel と mozc のビルドをやったが、16 GB メモリのマシンで tmpf
 
 サイズとかは適当に。後で拡張したりできるので大袈裟に気にすることはない (ちょっとめんどくさいが)。
 
-```shell
+```console
 $ qemu-img create -f qcow2 alpine.qcow2 8G
 ```
 
@@ -32,7 +32,7 @@ $ qemu-img create -f qcow2 alpine.qcow2 8G
 
 ダウンロードした Alpine のイメージを CD-ROM として使って QEMU を起動する。
 
-```shell
+```console
 $ qemu-system-aarch64 \
       -m 1G -nic user -M virt -cpu cortex-a57 -smp $(nproc) \
       -bios /usr/share/edk2-armvirt/aarch64/QEMU_EFI.fd \
@@ -53,7 +53,7 @@ $ qemu-system-aarch64 \
 
 CD-ROM のオプションなしで立ち上げる。インストールしたイメージが使われていればとりあえず成功。
 
-```shell
+```console
 $ qemu-system-aarch64 \
       -m 1G -nic user -M virt -cpu cortex-a57 -smp $(nproc) \
       -bios /usr/share/edk2-armvirt/aarch64/QEMU_EFI.fd \
@@ -70,13 +70,13 @@ AArch64 Multi-platform のものにしておけば無難だと思う。
 
 chroot 用のディレクトリを作る。ここでは `chroot` という微妙な名前のものにした。
 
-```shell
+```console
 $ mkdir chroot
 ```
 
 chroot 用のディレクトリの中に必要なディレクトリをマウントしていく。
 
-```shell
+```console
 $ mount -t proc proc ./chroot/proc
 $ mount -t sysfs sys ./chroot/sys
 $ mount -o bind /dev ./chroot/dev
@@ -87,20 +87,20 @@ $ mount -o bind /dev/pts ./chroot/dev/pts
 
 で、いざ chroot。
 
-```shell
+```console
 $ chroot ./chroot bash
 ```
 
 そのまま `pacman -Syu` しようとしたらデバイスの空き容量のチェックに失敗してこけてしまったので、
 現場猫案件だがチェックを無効化してなんとかする。
 
-```shell
+```console
 $ sed -i 's/^CheckSpace$/#CheckSpace/' /etc/pacman.conf
 ```
 
 いろいろ設定
 
-```shell
+```console
 $ pacman-key --init
 $ pacman-key --populate archlinuxarm
 $ pacman -Syu
@@ -111,7 +111,7 @@ root で作業するといろいろアレになりがちなので適当なユー
 作業用のユーザが root になれるように sudo を入れる。
 
 
-```shell
+```console
 $ pacman -S sudo
 $ usermod -aG wheel alarm
 $ passwd alarm
@@ -119,7 +119,7 @@ $ passwd alarm
 
 alarm ユーザに切り替える。
 
-```shell
+```console
 $ su - alarm
 ```
 

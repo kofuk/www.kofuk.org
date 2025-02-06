@@ -12,13 +12,13 @@ Ubuntu (をはじめ多くの GNU/Linux ディストリビューション) で�
 C++ のマニュアルページは入っていません (C++ にはマニュアルページを見る文化がないのだろうか…)。
 という訳で、自分でインストールする必要があります。
 
-```shell
+```console
 $ sudo apt install libstdc++-8-doc
 ```
 
 で、見るときは、
 
-```shell
+```console
 $ man std::vector
 ```
 

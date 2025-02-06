@@ -13,7 +13,7 @@ tags:
 
 例えば subproject `hoge` でだけ `warning_level` を 3 にしたい場合は
 
-```shell
+```console
 $ meson configure -Dhoge:warning_level=3
 ```
 

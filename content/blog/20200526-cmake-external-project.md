@@ -53,7 +53,7 @@ add_subdirectory(src)
 
 で試しに `ldd` で見てみる。
 
-```shell
+```console
 $ ldd build/mcmap
 	linux-vdso.so.1 (0x00007fffbf7f6000)
 	libpng16.so.16 => /tmp/foo/libpng/lib/libpng16.so.16 (0x00007f3a7ffea000)

@@ -12,7 +12,7 @@ LibreOffice とかでも一応 PDF は出てくるけどけっこう崩れる。
 
 で，テンプレートファイルが PDF になったのでこれを1ページ1ファイルに分解する。
 
-```shell
+```console
 $ pdfseparate foo.pdf %d.pdf
 ```
 

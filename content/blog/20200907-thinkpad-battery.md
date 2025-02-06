@@ -15,7 +15,7 @@ tags:
 
 入れる。
 
-```shell
+```console
 $ sudo pacman -S tlp
 ```
 
@@ -24,7 +24,7 @@ acpi-call を入れることを薦められたりするが，これはバッテ�
 
 `tlp-stat` というユーティリティも同時にインストールされるので次のような感じで現在の設定値を確認できる。
 
-```shell
+```console
 $ sudo tlp-stat -b
 ```
 
@@ -32,7 +32,7 @@ $ sudo tlp-stat -b
 
 で，一時的に値を設定するだけであれば，
 
-```shell
+```console
 $ sudo tlp setcharge 70 85 BAT0
 ```
 
@@ -46,14 +46,14 @@ $ sudo tlp setcharge 70 85 BAT0
 
 名前は `10-battery-threshold.conf` にした。適当。
 
-```config
+```sh
 START_CHARGE_THRESH_BAT0=70
 STOP_CHARGE_THRESH_BAT0=85
 ```
 
 で Systemd のサービスを有効化する。
 
-```shell
+```console
 $ sudo systemctl enable tlp.service
 ```
 

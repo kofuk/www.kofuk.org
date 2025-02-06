@@ -51,11 +51,11 @@ project('hogehoge', 'c')
 executable('hoge', 'main.c')
 ```
 2. コマンドラインで以下のコマンドを実行し、`_build` に Ninja のビルドファイルを生成する
-```shell
+```console
 $ meson setup . _build
 ```
 3. ビルド用のディレクトリで `ninja` コマンドを実行し、実際にビルドする
-```shell
+```console
 $ cd _build
 $ ninja
 ```

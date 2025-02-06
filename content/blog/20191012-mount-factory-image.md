@@ -11,7 +11,7 @@ tags:
 Google からダウンロードできる Nexus用 (もしくは Pixel用) のFactory Image は
 Linux でそのままマウントすることはできません.
 
-```shell
+```console
 $ sudo mount system.img system
 mount: /home/kofu/Downloads/razorg-JLS36C/tmp: wrong fs type, bad option, bad superblock on /dev/loop6, missing codepage or helper program, or other error.
 ```
@@ -19,7 +19,7 @@ mount: /home/kofu/Downloads/razorg-JLS36C/tmp: wrong fs type, bad option, bad su
 これをマウントするためには, `simg2img` というコマンドを利用します.
 APT で入ります.
 
-```shell
+```console
 $ sudo apt install simg2img
 $ simg2img system.img out.img
 $ sudo mount out.img system

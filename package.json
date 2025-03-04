@@ -15,7 +15,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250224.0",
     "@types/service-worker-mock": "^2.0.4",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "typescript": "^5.8.2",
     "typescript-language-server": "^4.3.3",
     "wrangler": "^3.111.0"

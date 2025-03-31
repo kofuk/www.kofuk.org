@@ -21,7 +21,7 @@
     "wrangler": "^4.4.0"
   },
   "dependencies": {
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-router-dom": "^7.4.0",
     "swr": "^2.3.3"
   }

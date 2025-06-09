@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-router-dom": "^7.6.1",
+    "react-router-dom": "^7.6.2",
     "swr": "^2.3.3"
   }
 }

@@ -18,7 +18,7 @@
     "prettier": "^3.6.2",
     "typescript": "^5.9.2",
     "typescript-language-server": "^4.3.4",
-    "wrangler": "^4.27.0"
+    "wrangler": "^4.28.1"
   },
   "dependencies": {
     "react": "^19.1.1",
